@@ -1,0 +1,68 @@
+import React from "react";
+import Link from "next/link";
+import pic1 from "../assets/img/slika.png";
+import pic2 from "../assets/img/slika2.png";
+import pic3 from "../assets/img/slika3.png";
+import Image from "next/image";
+
+const Projects = () => {
+  return (
+    <div id="projects" className="container mx-auto mb-14">
+      <div data-aos="fade-up">
+        <span className="uppercase text-sm leading-7 tracking-[9px] font-medium">
+          Selected Projects
+        </span>
+        <h4>Case Studies</h4>
+      </div>
+      <h5>
+        TimeLine -{" "}
+        <span className="font-normal">Event attendance Application</span>{" "}
+      </h5>
+      <div className="overlay-container">
+        <Image src={pic1} alt="" className="image" />
+        <div class="overlay">
+          <Link
+            href="time-line"
+            target="_blank"
+            className="text text-black font-semibold text-xl"
+          >
+            View
+          </Link>
+        </div>
+      </div>
+      <h5>
+        <span className="uppercase">ANI ACTIVITY - </span>
+        <span className="font-normal">Event Social Media App</span>{" "}
+      </h5>
+      <div className="overlay-container">
+        <Image src={pic2} alt="" className="image" />
+        <div class="overlay">
+          <Link
+            href="any-activity"
+            target="_blank"
+            className="text text-black font-semibold text-xl"
+          >
+            View
+          </Link>
+        </div>
+      </div>
+      <h5>
+        Eko Korpa - <span className="font-normal">Farmer Products Store</span>{" "}
+      </h5>
+      <div className="overlay-container">
+        <Image src={pic3} alt="" className="image" />
+        <div class="overlay">
+          <Link
+            href="opg-marketing"
+            target="_blank"
+            className="text text-black font-semibold text-xl"
+          >
+            View
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

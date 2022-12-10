@@ -1,0 +1,80 @@
+///Navbar
+
+.spanAnimation::before {
+  width: 28px;
+  height: 4px;
+  display: block;
+  transition: 0.3s;
+  background-color: #292826;
+  border-radius: 1rem;
+}
+.spanAnimation::after {
+  width: 28px;
+  height: 4px;
+  display: block;
+  transition: 0.3s;
+  background-color: #292826;
+  border-radius: 1rem;
+}
+
+.spanAnimation::before {
+  content: "";
+  transform: translateY(-9px);
+  background-color: #292826;
+}
+
+.spanAnimation::after {
+  content: "";
+  transform: translateY(6px);
+}
+
+.togglerOpen span {
+  background-color: transparent;
+}
+.togglerOpen span:before {
+  transform: translateY(0px) rotate(45deg);
+  background-color: white;
+}
+.togglerOpen span:after {
+  transform: translateY(-3px) rotate(-45deg);
+  background-color: white;
+}
+
+.siteNavbar ul {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 60px);
+  left: 0;
+  top: 60px;
+  flex-direction: column-reverse;
+  align-items: center;
+  // background-color: rgba(0, 0, 0, 0.95);
+  background: url("../assets//img/fashion-designer.png") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.siteNavbar ul li {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.siteNavbar .open {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 21;
+  padding-top: 50px;
+}

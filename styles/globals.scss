@@ -1,0 +1,35 @@
+@tailwind base;
+@layer base {
+  body {
+    @apply text-black bg-body font-poppins;
+  }
+  h1 {
+    @apply text-xs leading-3 font-medium md:leading-6 md:text-base;
+  }
+  h2 {
+    @apply text-xs max-w-[556px] font-light tracking-wide leading-6 md:tracking-wider md:text-sm md:max-w-none md:leading-5;
+  }
+  h3 {
+    @apply text-base font-bold md:text-xl;
+  }
+  h4 {
+    @apply text-6xl font-bold leading-tight;
+  }
+  h5 {
+    @apply text-sm font-bold my-10 leading-6 tracking-wide md:leading-relaxed md:text-3xl;
+  }
+  h6 {
+    @apply uppercase text-xs  leading-7  tracking-[9px] font-medium md:text-base;
+  }
+  a {
+    @apply not-italic;
+  }
+  p {
+    @apply text-sm tracking-wide leading-5 md:leading-8 md:text-xl;
+  }
+  small {
+    @apply text-base;
+  }
+}
+@tailwind components;
+@tailwind utilities;
