@@ -7,6 +7,8 @@ import classNames from "classnames";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
+  const [isContact, setIsContact] = useState(false);
+  const [proba, setProba] = useState(false);
 
   const toggleFun = () => setToggle(!toggle);
   return (
@@ -20,15 +22,35 @@ const Interface = () => {
             className={classNames(
               `${
                 toggle && styles.open
-              } my-5 flex p-0 items-center list-none text-black md:my-0`
+              } my-5 flex p-0 items-center list-none text-white md:my-0`
             )}
           >
-            <li className="mr-4">
-              <Link href="/about">O Nama</Link>
-            </li>
-            <li className="mr-4">
-              <Link href="/contact">Kontakt</Link>
-            </li>
+            {isContact ? (
+              <>
+                {proba ? (
+                  <h2>Success</h2>
+                ) : (
+                  <h1 onClick={(e) => setProba(true)}>Hallo</h1>
+                )}
+              </>
+            ) : (
+              <>
+                <li onClick={(e) => setIsContact(true)} className="mr-4">
+                  <Link href="/">Contact</Link>
+                </li>
+                <li className="mr-4">
+                  <Link href="about-me" target="_blank">
+                    About Me
+                  </Link>
+                </li>
+                <li className="mr-4">
+                  <Link href="/">Projects</Link>
+                </li>
+                <li className="mr-4">
+                  <Link href="/">Home</Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         <button
@@ -37,7 +59,9 @@ const Interface = () => {
               toggle && styles.togglerOpen
             } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-9  z-30    `
           )}
-          onClick={toggleFun}
+          onClick={(e) => {
+            setIsContact(false), setProba(false), toggleFun();
+          }}
         >
           {toggle ? (
             <span className="font-semibold uppercase z-30 text-white mr-2.5">
