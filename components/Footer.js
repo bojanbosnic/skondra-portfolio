@@ -1,28 +1,25 @@
 import React from "react";
 import Image from "next/image";
-import pic from "../assets/img/footer-pic.png";
 import logo from "../assets/logo/logo-white.svg";
 import phone from "../assets/img/1.svg";
 import email from "../assets/img/2.svg";
 import behance from "../assets/img/3.svg";
 import linkedin from "../assets/img/4.svg";
 import dribble from "../assets/img/5.svg";
+import Contact from "./Contact";
+
 const Footer = () => {
   return (
     <>
-      {/* <div className="wrapper ">
-        <span className="max-w-[606px] font-semibold text-5xl leading-normal">
-          Interested Working With me? Let's connect!
-        </span>
-      </div> */}
+      <Contact />
       <div className="bg-black text-white pt-20">
         <div className="container mx-auto">
           <div className="w-full flex items-center flex-wrap justify-between">
-            <div className="w-full justify-center md:w-1/2">
+            <div className="w-full flex items-center justify-center flex-col md:flex-none  md:w-1/2">
               <div>
                 <Image src={logo} alt="" />
               </div>
-              <div className="mt-5 max-w-sm leading-4  tracking-wider text-sm font-normal md:leading-8">
+              <div className="mt-5 text-center max-w-sm leading-4  tracking-wider text-sm font-normal md:leading-8 md:text-left">
                 I usually work on several projects but I’ll be happy to discuss
                 new opportunities.
                 <b className=" block">Let’s get in touch!</b>

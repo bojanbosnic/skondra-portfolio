@@ -19,7 +19,7 @@
 
 .spanAnimation::before {
   content: "";
-  transform: translateY(-9px);
+  transform: translateY(-11px);
   background-color: #292826;
 }
 
@@ -36,7 +36,7 @@
   background-color: white;
 }
 .togglerOpen span:after {
-  transform: translateY(-3px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
   background-color: white;
 }
 
@@ -48,7 +48,6 @@
   top: 60px;
   flex-direction: column-reverse;
   align-items: center;
-  // background-color: rgba(0, 0, 0, 0.95);
   background: url("../assets//img/fashion-designer.png") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

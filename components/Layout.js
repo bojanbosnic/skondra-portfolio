@@ -32,4 +32,4 @@ export default Layout;
 
 // <meta name="description" content="Starter kit of custom HTML & CSS project with Webpack 4.">
 // <meta name="Keywords" content="Webpack, Bootstrap">
-// <meta name="author" content="Crowscript"></meta>
+// <meta name="author" content="Bojan Bosnic"></meta>

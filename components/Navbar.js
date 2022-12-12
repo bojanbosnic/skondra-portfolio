@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
+import ContactForm from "./ContactForm";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
@@ -30,7 +31,9 @@ const Interface = () => {
                 {proba ? (
                   <h2>Success</h2>
                 ) : (
-                  <h1 onClick={(e) => setProba(true)}>Hallo</h1>
+                  <div className="container mx-auto">
+                    <ContactForm />
+                  </div>
                 )}
               </>
             ) : (
@@ -57,14 +60,14 @@ const Interface = () => {
           className={classNames(
             `${
               toggle && styles.togglerOpen
-            } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-9  z-30    `
+            } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-6  z-30`
           )}
           onClick={(e) => {
             setIsContact(false), setProba(false), toggleFun();
           }}
         >
           {toggle ? (
-            <span className="font-semibold uppercase z-30 text-white mr-2.5">
+            <span className="font-semibold   uppercase z-30 text-white mr-2.5">
               Close
             </span>
           ) : (
