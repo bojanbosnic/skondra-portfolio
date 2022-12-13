@@ -49,7 +49,7 @@ const TimeLine = () => {
         </div>
 
         <div className="w-full col-2 float-right clear-right">
-          <h5 className="leading-snug mb-2.5 mt-5">Project Goal</h5>
+          <h5 className="leading-snug mb-2.5 mt-5 text-3xl">Project Goal</h5>
           <div className="my-2.5">
             <p className="font-semibold">Gaining a Clear Picture of Your ROI</p>
             <p>
@@ -99,7 +99,7 @@ const TimeLine = () => {
         </div>
 
         <div className="col-1 float-left mb-11">
-          <h5 className="leading-snug mb-2.5 mt-7">Market</h5>
+          <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Market</h5>
           <div className="my-2.5">
             <p className="font-semibold">Event Organizers </p>
             <p>Business value add to get events</p>
@@ -125,7 +125,7 @@ const TimeLine = () => {
             <p>Monitor crowed movement (e.g. Exit)</p>
             <p>Monitor drink/food stands</p>
           </div>
-          <h5 className="leading-snug mb-2.5 mt-7">Design</h5>
+          <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Design</h5>
           <p>
             We updated the screens based on the feedback from our clients and
             continued with the final UI design. We had another round of testing

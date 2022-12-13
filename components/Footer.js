@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="bg-black text-white pt-20">
         <div className="container mx-auto">
           <div className="w-full flex items-center flex-wrap justify-between">
-            <div className="w-full flex items-center justify-center flex-col md:flex-none  md:w-1/2">
+            <div className="w-full flex items-center justify-center flex-col md:block   md:w-1/2">
               <div>
                 <Image src={logo} alt="" />
               </div>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <b className=" block">Let’s get in touch!</b>
               </div>
               <nav className="mt-16 hidden underline md:block">
-                <ul className="flex items-center justify-start flex-wrap">
+                <ul className="flex  items-center justify-start flex-wrap">
                   <li className="mr-10">Home</li>
                   <li className="mr-10">About Me</li>
                   <li className="mr-10">Portfolio</li>

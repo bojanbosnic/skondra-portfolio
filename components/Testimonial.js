@@ -1,99 +1,74 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import pic from "../assets/img/slika2.png";
+import Slider from "react-slick";
+import { testimonialReviews } from "../datas";
+import { AiFillStar } from "react-icons/ai";
+
 const Testimonial = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div>
-      <div id="animation-carousel" class="relative" data-carousel="static">
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <Image
-              src={pic}
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+    <div className="container mx-auto">
+      <Slider {...settings}>
+        {testimonialReviews.map((item) => (
+          <div key={item.id} className="card">
+            <div className="flex">
+              <AiFillStar color="#EEC01C" />
+              <AiFillStar color="#EEC01C" />
+              <AiFillStar color="#EEC01C" />
+              <AiFillStar color="#EEC01C" />
+              <AiFillStar color="#EEC01C" />
+            </div>
+            <div className="card-top">{item.title}</div>
+            <div className="card-bottom">
+              <Image
+                src={item.picture}
+                width={50}
+                height={50}
+                alt="user picture"
+              />
+              <span>{item.name}</span>
+              <span>{item.position}</span>
+            </div>
           </div>
-          <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <Image
-              src={pic}
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div
-            class="hidden duration-200 ease-linear"
-            data-carousel-item="active"
-          >
-            <Image
-              src={pic}
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <Image
-              src={pic}
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <Image
-              src={pic}
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          type="button"
-          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };

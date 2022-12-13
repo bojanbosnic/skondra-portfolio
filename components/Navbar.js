@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
-  const [proba, setProba] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const toggleFun = () => setToggle(!toggle);
   return (
@@ -28,11 +28,11 @@ const Interface = () => {
           >
             {isContact ? (
               <>
-                {proba ? (
+                {success ? (
                   <h2>Success</h2>
                 ) : (
                   <div className="container mx-auto">
-                    <ContactForm />
+                    <ContactForm setSuccess={setSuccess} />
                   </div>
                 )}
               </>
@@ -63,11 +63,11 @@ const Interface = () => {
             } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-6  z-30`
           )}
           onClick={(e) => {
-            setIsContact(false), setProba(false), toggleFun();
+            setIsContact(false), setSuccess(false), toggleFun();
           }}
         >
           {toggle ? (
-            <span className="font-semibold   uppercase z-30 text-white mr-2.5">
+            <span className="font-semibold uppercase z-30 text-white mr-2.5">
               Close
             </span>
           ) : (

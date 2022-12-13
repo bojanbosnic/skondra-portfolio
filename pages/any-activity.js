@@ -16,6 +16,7 @@ import newToCommuntities from "../assets/img/New to COMMUNITIES.png";
 import retirees from "../assets/img/RETIREES.png";
 
 const TimeLine = () => {
+  console.log("OVO JE SLIKA", retirees);
   return (
     <>
       <div className="container mx-auto">
@@ -34,7 +35,7 @@ const TimeLine = () => {
           <p>2022</p>
         </div>
 
-        <div className="col-2-2 float-right">
+        <div className="col-2-2 float-right mt-7 md:mt-0">
           <Image src={asset1} alt="any acitivity logo" />
           <p className="mt-5">
             ANI has redefined how sport and physical activity is consumed;
@@ -48,7 +49,9 @@ const TimeLine = () => {
         </div>
 
         <div className="w-full col-2-2 float-right clear-right">
-          <h5 className="my-5">The Next Stage of Evolution</h5>
+          <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
+            The Next Stage of Evolution
+          </h5>
           <span className="uppercase text-sm font-medium mb-2.5">
             Ani where | Ani tyme | Ani one
           </span>
@@ -85,7 +88,9 @@ const TimeLine = () => {
         </div>
 
         <div className="col-1-2 float-left">
-          <h5 className="mt-16">Targeted Audiance</h5>
+          <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
+            Targeted Audiance
+          </h5>
           <div className="flex items-center my-5">
             <Image src={individuals} alt="Individuals" className="mr-2.5" />
             <div>
@@ -157,74 +162,75 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <h5
-          className="w-full col-1-2 float-left mt-10 mb-5 clear-left"
-          id="ZADNJE"
-        >
+        <h5 className="w-full col-1-2 float-left mt-10 mb-5 clear-left">
           The Next Stage of Evolution
         </h5>
-        <div className="col-1-2 float-left mb-11 clear-left">
-          <div className="mb-5">
-            <p className="font-bold">Create</p>
-            <ul className="list-disc">
-              <li className="li-activity">
-                Create Create activities that suit you, your location and your
-                time, and invite others to join.
-              </li>
-              <li className="li-activity">
-                One off, Re occurring or Tournament Options.
-              </li>
-              <li className="li-activity">
-                Make it Public or share it only to your Friends, Groups or
-                associated Organisations.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p className="font-bold">Suggested</p>
-            <ul className="list-disc">
-              <li className="li-activity">
-                Scroll through the Suggested Tab (shows options based on
-                location, prior activities & friends.
-              </li>
-              <li className="li-activity">
-                {" "}
-                Two simple Click’s and you’re ready to hit the Join Button.
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        <div className="w-full col-2-2 float-right ">
-          <div className="mb-14">
-            <p className="font-bold">Search </p>
-            <ul className="list-disc">
-              <li className="li-activity">
-                Search Find Activities in your local or chosen area that suit
-                your needs.
-              </li>
-              <li className="li-activity">
-                {" "}
-                Discover activities based on Time, Location, Ability, Age,
-                Gender through the Search Tab.
-              </li>
-            </ul>
+        <div className="w-full flex flex-wrap flex-col justify-center mb-10  md:justify-between md:mb-20 md:flex-nowrap">
+          <div className="w-full flex justify-between md:col-1-3" id="PRVI">
+            <div className="mb-5 w-full md:col-1-3">
+              <p className="font-bold">Create</p>
+              <ul className="list-disc pl-8">
+                <li className="li-activity">
+                  Create Create activities that suit you, your location and your
+                  time, and invite others to join.
+                </li>
+                <li className="li-activity">
+                  One off, Re occurring or Tournament Options.
+                </li>
+                <li className="li-activity">
+                  Make it Public or share it only to your Friends, Groups or
+                  associated Organisations.
+                </li>
+              </ul>
+            </div>
+
+            <div className="mb-14 w-full md:col-1-3">
+              <p className="font-bold">Search </p>
+              <ul className="list-disc pl-8">
+                <li className="li-activity">
+                  Search Find Activities in your local or chosen area that suit
+                  your needs.
+                </li>
+                <li className="li-activity">
+                  {" "}
+                  Discover activities based on Time, Location, Ability, Age,
+                  Gender through the Search Tab.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <p className="font-bold">Profile</p>
-            <ul className="list-disc">
-              <li className="li-activity">
-                Rate your experience with Participants and Spotters.
-              </li>
-              <li className="li-activity">
-                {" "}
-                Keep your Public Profile up to date with interests, rating, best
-                experiences and photos.
-              </li>
-              <li className="li-activity">
-                Link your Profile to your Organisation for Private Activities.
-              </li>
-            </ul>
+
+          <div id="DRUGI" className="w-full md:col-1-3">
+            <div className="w-full md:col-1-2">
+              <p className="font-bold">Suggested</p>
+              <ul className="list-disc pl-8">
+                <li className="li-activity">
+                  Scroll through the Suggested Tab (shows options based on
+                  location, prior activities & friends.
+                </li>
+                <li className="li-activity">
+                  {" "}
+                  Two simple Click’s and you’re ready to hit the Join Button.
+                </li>
+              </ul>
+            </div>
+            <div className="w-full md:col-1-3">
+              <p className="font-bold">Profile</p>
+              <ul className="list-disc pl-8">
+                <li className="li-activity">
+                  Rate your experience with Participants and Spotters.
+                </li>
+                <li className="li-activity">
+                  {" "}
+                  Keep your Public Profile up to date with interests, rating,
+                  best experiences and photos.
+                </li>
+                <li className="li-activity">
+                  Link your Profile to your Organisation for Private Activities.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

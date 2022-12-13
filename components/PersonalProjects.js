@@ -25,13 +25,13 @@ const PersonalProjects = () => {
         UI Shoots and Graphic Design
       </h4>
       <div
-        className="w-full flex items-center justify-between mt-10 mb-14"
+        className="w-full flex flex-wrap items-center justify-between mt-10 mb-14 md:flex-nowrap"
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <div class="w-1/2 truncate rounded-2xl mr-10 bg-white border-transparent">
+        <div class="w-full overflow-hidden rounded-2xl mr-10 bg-white border-transparent mb-5 md:mb-0 md:w-1/2">
           <div className="overlay-container">
             <Image
               src={uxDesigner}
@@ -59,7 +59,7 @@ const PersonalProjects = () => {
           </div>
         </div>
 
-        <div class="w-1/2 rounded-2xl truncate bg-white border-transparent">
+        <div class="w-full rounded-2xl overflow-hidden bg-white border-transparent md:w-1/2">
           <div className="overlay-container">
             <Image
               src={artist}
