@@ -41,7 +41,7 @@ const ContactForm = ({ setSuccess }) => {
               />
             </div>
 
-            <div className="mb-5">
+            <div className="flex flex-col mb-5">
               <label>Message</label>
               <textarea placeholder="Type some texte here..."></textarea>
             </div>

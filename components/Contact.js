@@ -4,14 +4,20 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="heading">
+    <div className="footer-contact">
       <div className="container mx-auto">
-        <span className="block max-w-[606px] font-semibold text-5xl leading-normal">
-          Interested Working With me? Let's connect!
-        </span>
-        <button className="upppercase p-4 bg-black text-white">
-          Contact Me
-        </button>
+        <div className="pt-[112px] pb-[215px] flex justify-center flex-col items-center text-black">
+          <div className=" max-w-[606px] text-center mb-10">
+            <span className="block font-semibold text-5xl leading-normal">
+              Interested Working With me? Let's connect!
+            </span>
+          </div>
+          <div className="">
+            <button className="upppercase p-4 bg-black text-white">
+              Contact Me
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

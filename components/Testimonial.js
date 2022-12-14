@@ -5,10 +5,11 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { testimonialReviews } from "../datas";
 import { AiFillStar } from "react-icons/ai";
+import cloud from "../assets/img/slider/cloud.svg";
 
 const Testimonial = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -21,11 +22,11 @@ const Testimonial = () => {
           slidesToScroll: 2,
           initialSlide: 2,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -45,30 +46,42 @@ const Testimonial = () => {
 
   return (
     <div className="container mx-auto">
-      <Slider {...settings}>
-        {testimonialReviews.map((item) => (
-          <div key={item.id} className="card">
-            <div className="flex">
-              <AiFillStar color="#EEC01C" />
-              <AiFillStar color="#EEC01C" />
-              <AiFillStar color="#EEC01C" />
-              <AiFillStar color="#EEC01C" />
-              <AiFillStar color="#EEC01C" />
+      <div className="mb-28">
+        <span>Reviews</span>
+        <h4 className="mb-9">Testimonials</h4>
+        <Slider {...settings}>
+          {testimonialReviews.map((item) => (
+            <div key={item.id} className="card">
+              <div className="flex mb-5">
+                <AiFillStar color="#EEC01C" />
+                <AiFillStar color="#EEC01C" />
+                <AiFillStar color="#EEC01C" />
+                <AiFillStar color="#EEC01C" />
+                <AiFillStar color="#EEC01C" />
+              </div>
+              <small className="leading-6 tracking-widest">{item.title}</small>
+              <div className="flex justify-between items-center w-full">
+                <div className="flex items-center ">
+                  <Image
+                    src={item.picture}
+                    width={60}
+                    height={60}
+                    className="rounded-full"
+                    alt="user picture"
+                  />
+                  <div className="flex flex-col ml-4">
+                    <span>{item.name}</span>
+                    <span>{item.position}</span>
+                  </div>
+                </div>
+                <div>
+                  <Image src={cloud} alt="cloud" />
+                </div>
+              </div>
             </div>
-            <div className="card-top">{item.title}</div>
-            <div className="card-bottom">
-              <Image
-                src={item.picture}
-                width={50}
-                height={50}
-                alt="user picture"
-              />
-              <span>{item.name}</span>
-              <span>{item.position}</span>
-            </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

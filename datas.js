@@ -7,7 +7,7 @@ export const testimonialReviews = [
   {
     id: 1,
     title:
-      " Working with Dejan was truly a delightful experience. From our kick-off meeting to our final delivery, Dejan had the creative depth to go from an idea to a fully finished product. On top of that, he is a world class communicator which makes the process fun and non-intimidating.",
+      " I’ve worked with Dejan on multiple projects, including the complete overhaul and re-design of our website. He is highly skilled and very creative. Always quick to respond to requests and incredibly thorough.He is simply the best. Thanks, Dejan!",
     name: "Strahinja Babic",
     position: "CEO at BBT Service",
     picture: `${strahinja.src}`,
