@@ -68,6 +68,7 @@ const Footer = () => {
                     <a
                       href="https://dribbble.com/skondra"
                       target="_blank"
+                      rel="noreferrer"
                       className="flex items-center underline"
                     >
                       <span className="mr-12">
@@ -82,6 +83,7 @@ const Footer = () => {
                     <a
                       href="https://linkedin.com/dejanskondric"
                       target="_blank"
+                      rel="noreferrer"
                       className="flex items-center underline"
                     >
                       <span className="mr-12">
@@ -96,6 +98,7 @@ const Footer = () => {
                     <a
                       href="https://www.behance.net/skondra"
                       target="_blank"
+                      rel="noreferrer"
                       className="flex items-center underline"
                     >
                       <span className="mr-12">
@@ -113,7 +116,11 @@ const Footer = () => {
           <div className="flex justify-center mt-6 pb-16">
             <span className="font-normal text-base tracking-wider text-fade">
               All Right Reserved ©
-              <a href="https://github.com/bojanbosnic" target="_blank">
+              <a
+                href="https://github.com/bojanbosnic"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 Bojan Bosnic
               </a>

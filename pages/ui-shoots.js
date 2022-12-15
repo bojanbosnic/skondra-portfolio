@@ -34,7 +34,7 @@ const UiShoots = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={events} className="image" />
+        <Image src={events} className="image" alt="events image" />
       </div>
       <div
         className="my-10"
@@ -43,7 +43,7 @@ const UiShoots = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={loginScreen} className="image" />
+        <Image src={loginScreen} className="image" alt="login screeen" />
       </div>
       <div
         className="my-10"
@@ -52,7 +52,11 @@ const UiShoots = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={employerDashboard} className="image" />
+        <Image
+          src={employerDashboard}
+          className="image"
+          alt="employerDashboard"
+        />
       </div>
       <div
         className="my-10"
@@ -61,7 +65,7 @@ const UiShoots = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={openRace} className="image" />
+        <Image src={openRace} className="image" alt="open race" />
       </div>
       <div
         className="my-10"
@@ -70,7 +74,7 @@ const UiShoots = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={italySite} className="image" />
+        <Image src={italySite} className="image" alt="Italy site" />
       </div>
     </div>
   );

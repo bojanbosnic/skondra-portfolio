@@ -16,7 +16,6 @@ import newToCommuntities from "../assets/img/New to COMMUNITIES.png";
 import retirees from "../assets/img/RETIREES.png";
 
 const TimeLine = () => {
-  console.log("OVO JE SLIKA", retirees);
   return (
     <>
       <div className="container mx-auto">
@@ -369,7 +368,6 @@ const TimeLine = () => {
         <div
           className="my-2.5"
           data-aos-
-          className="w-full max-w"
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1000"

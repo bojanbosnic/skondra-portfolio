@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="pt-0 pb-0 md:pt-28 md:pb-48 flex justify-center flex-col items-center text-black">
           <div className=" max-w-[606px] text-center mb-10">
             <span className="block text-base font-semibold leading-normal md:text-5xl">
-              Interested Working With me? Let's connect!
+              Interested Working With me? Let&apos;s connect!
             </span>
           </div>
           <div className="">

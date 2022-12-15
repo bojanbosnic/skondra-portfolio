@@ -42,6 +42,7 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/dejanskondric/"
               target="_blank"
+              rel="noreferrer"
               className="underline"
             >
               LinkedIn profile.
