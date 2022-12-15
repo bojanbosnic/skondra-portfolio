@@ -15,8 +15,21 @@ const About = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h6>A few words about me</h6>
-          <h5 className="mt-2.5">
+          <h6
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            A few words about me
+          </h6>
+          <h5
+            className="mt-2.5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             I’m a 23 year old designer and artist living in Banja Luka. I pride
             myself on my eagerness and ability to learn. Over the last few
             years, I have allowed myself to delve into a design and art centric

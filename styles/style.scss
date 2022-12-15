@@ -112,6 +112,15 @@
   margin: 0 10px;
 }
 
+.slick-arrow.slick-prev {
+  top: 100%;
+  left: 80%;
+}
+.slick-arrow.slick-next {
+  top: 100%;
+  right: 15%;
+}
+
 .slick-list {
   margin: 0 -10px;
 }

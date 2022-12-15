@@ -14,7 +14,12 @@ const Testimonial = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "red" }}
+        style={{
+          ...style,
+          display: "block",
+          background: "transparent",
+          color: "black",
+        }}
         onClick={onClick}
       />
     );
@@ -77,11 +82,33 @@ const Testimonial = () => {
   return (
     <div className="container mx-auto">
       <div className="mb-28">
-        <span>Reviews</span>
-        <h4 className="mb-9">Testimonials</h4>
+        <span
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Reviews
+        </span>
+        <h4
+          className="mb-9"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Testimonials
+        </h4>
         <Slider {...settings}>
           {testimonialReviews.map((item) => (
-            <div key={item.id} className="card">
+            <div
+              key={item.id}
+              className="card"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <div className="flex mb-5">
                 <AiFillStar color="#EEC01C" />
                 <AiFillStar color="#EEC01C" />
