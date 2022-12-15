@@ -14,7 +14,7 @@ const Interface = () => {
   const toggleFun = () => setToggle(!toggle);
   return (
     <div className="container mx-auto">
-      <nav className="flex bg-transparent justify-between items-center mb-8">
+      <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
         <Link href="/" legacyBehavior>
           <Image src={logo} alt="Bagzi studio logo" />
         </Link>
