@@ -5,15 +5,45 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { testimonialReviews } from "../datas";
 import { AiFillStar } from "react-icons/ai";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import cloud from "../assets/img/slider/cloud.svg";
 
 const Testimonial = () => {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "transparent",
+          color: "black",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -60,7 +90,7 @@ const Testimonial = () => {
                 <AiFillStar color="#EEC01C" />
               </div>
               <small className="leading-6 tracking-widest">{item.title}</small>
-              <div className="flex justify-between items-center w-full">
+              <div className="flex justify-between items-center w-full mt-12">
                 <div className="flex items-center ">
                   <Image
                     src={item.picture}

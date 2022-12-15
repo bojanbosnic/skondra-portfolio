@@ -12,7 +12,13 @@ const TimeLine = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div className="col-1 float-left">
+        <div
+          className="col-1 float-left"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="my-2.5">
             OPG Market-
@@ -36,7 +42,13 @@ const TimeLine = () => {
           <p className="mb-7">2022</p>
         </div>
 
-        <div className="col-2 float-right">
+        <div
+          className="col-2 float-right"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={timeline} alt="timeline logo" />
           <p className="mt-5">
             Event attendance tracking is an important source of data for
@@ -48,7 +60,13 @@ const TimeLine = () => {
           </p>
         </div>
 
-        <div className="w-full col-2 float-right clear-right">
+        <div
+          className="w-full col-2 float-right clear-right"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h5 className="leading-snug mb-2.5 mt-5 text-3xl">Project Goal</h5>
           <div className="my-2.5">
             <p className="font-semibold">Gaining a Clear Picture of Your ROI</p>
@@ -98,7 +116,13 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <div className="col-1 float-left mb-11">
+        <div
+          className="col-1 float-left mb-11"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Market</h5>
           <div className="my-2.5">
             <p className="font-semibold">Event Organizers </p>
@@ -134,17 +158,35 @@ const TimeLine = () => {
           </p>
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image
             src={timelineDiagram}
             className="image"
             alt="Time line CMS Home Page"
           />
         </div>
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={addTags} className="image" alt="Add Tags" />
         </div>
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image
             src={eventsTableView}
             className="image"
@@ -152,21 +194,39 @@ const TimeLine = () => {
           />
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image
             src={timeLine1}
             className="image"
             alt="TimeLineCMS Events Dashboard Contact Section EDIT"
           />
         </div>
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image
             src={laptop1}
             className="image"
             alt="Laptop screen display 1"
           />
         </div>
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image
             src={laptop2}
             className="image"

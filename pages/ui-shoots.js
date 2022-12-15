@@ -8,11 +8,32 @@ import events from "../assets/img/ui-shoots/Events.jpg";
 const UiShoots = () => {
   return (
     <div className="container mx-auto">
-      <h6 className="text-silver mb-2.5"> UI Shoots</h6>
-      <h5 className="my-2.5 font-normal">
+      <h6
+        className="text-silver mb-2.5"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        {" "}
+        UI Shoots
+      </h6>
+      <h5
+        className="my-2.5 font-normal"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         Examples so you have a better understanding of my style
       </h5>
-      <div className="my-10">
+      <div
+        className="my-10"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <Image src={events} className="image" />
       </div>
       <div

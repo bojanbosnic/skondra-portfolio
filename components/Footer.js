@@ -12,7 +12,13 @@ const Footer = () => {
   return (
     <>
       <Contact />
-      <div className="bg-black text-white pt-20">
+      <div
+        className="bg-black text-white pt-20"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div className="container mx-auto">
           <div className="w-full flex items-center flex-wrap justify-between">
             <div className="w-full flex items-center justify-center flex-col md:block   md:w-1/2">

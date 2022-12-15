@@ -12,7 +12,16 @@ const ContactForm = ({ setSuccess }) => {
             I usually work on several projects but I’ll be happy to discuss new
             opportunities. <b>Let’s get in touch!</b>
           </small>
-          <div>Head Qouter</div>
+          <div className="bg-black rounded-xl">
+            <div className="py-[38px]">
+              <span className="px-11 block text-4xl font-bold leading-relaxed">
+                Head Quarter
+              </span>
+              <span className="ml-[46px] mr-[82px] block text-2xl">
+                Banja Luka, BiH Kosovke Devojke 10 78000
+              </span>
+            </div>
+          </div>
         </div>
         <div className="w-[70%] bg-white rounded-md text-black p-12 overflow-y-scroll">
           <h5>Let’s Talk</h5>
@@ -32,7 +41,7 @@ const ContactForm = ({ setSuccess }) => {
               </div>
             </div>
 
-            <div className="flex flex-col mb-5">
+            <div className="flex flex-col ">
               <label>Subject</label>
               <input
                 className="w-full"
@@ -41,7 +50,7 @@ const ContactForm = ({ setSuccess }) => {
               />
             </div>
 
-            <div className="flex flex-col mb-5">
+            <div className="flex flex-col ">
               <label>Message</label>
               <textarea placeholder="Type some texte here..."></textarea>
             </div>

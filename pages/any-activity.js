@@ -20,7 +20,13 @@ const TimeLine = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div className="col-1-2 float-left">
+        <div
+          className="col-1-2 float-left"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="mb-2.5">
             TimeLine -
@@ -35,7 +41,13 @@ const TimeLine = () => {
           <p>2022</p>
         </div>
 
-        <div className="col-2-2 float-right mt-7 md:mt-0">
+        <div
+          className="col-2-2 float-right mt-7 md:mt-0"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={asset1} alt="any acitivity logo" />
           <p className="mt-5">
             ANI has redefined how sport and physical activity is consumed;
@@ -48,7 +60,13 @@ const TimeLine = () => {
           </p>
         </div>
 
-        <div className="w-full col-2-2 float-right clear-right">
+        <div
+          className="w-full col-2-2 float-right clear-right"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
             The Next Stage of Evolution
           </h5>
@@ -62,7 +80,13 @@ const TimeLine = () => {
             that unlocks thousands of sports games and recreational activities
             to individuals around the globe.
           </p>
-          <div className="my-5">
+          <div
+            className="my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-bold uppercase"> Create Experiences</p>
             <p>
               At the touch of a button, easily create free or paid activities/
@@ -70,7 +94,13 @@ const TimeLine = () => {
               community.
             </p>
           </div>
-          <div className="my-5">
+          <div
+            className="my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-bold uppercase">Seamlessly Connect</p>
             <p>
               Connect with like minded ‘individuals’ for a game of soccer,
@@ -78,7 +108,13 @@ const TimeLine = () => {
               ability.
             </p>
           </div>
-          <div className="my-5">
+          <div
+            className="my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-bold uppercase">Participate</p>
             <p>
               Participate at your own convenience in your own format; training,
@@ -87,7 +123,13 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <div className="col-1-2 float-left">
+        <div
+          className="col-1-2 float-left"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
             Targeted Audiance
           </h5>
@@ -101,7 +143,13 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="flex items-center my-5">
+          <div
+            className="flex items-center my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <Image src={retirees} alt="Retirees" className="mr-2.5" />
             <div>
               <p className="font-semibold">Retirees</p>
@@ -111,7 +159,13 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="flex items-center my-5">
+          <div
+            className="flex items-center my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <Image src={corporates} alt="Corporates" className="mr-2.5" />
             <div>
               <p className="font-semibold">Corporates</p>
@@ -122,7 +176,13 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="flex items-center my-5">
+          <div
+            className="flex items-center my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div>
               <Image src={couples} alt="Couples" />
             </div>
@@ -135,7 +195,13 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="flex items-center my-5">
+          <div
+            className="flex items-center my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <Image
               src={newToCommuntities}
               alt="New to Communitie"
@@ -151,7 +217,13 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="flex items-center my-5">
+          <div
+            className="flex items-center my-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <Image src={families} alt="families" className="mr-2.5" />
             <div>
               <p className="font-semibold">Families</p>
@@ -162,13 +234,25 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <h5 className="w-full col-1-2 float-left mt-10 mb-5 clear-left">
+        <h5
+          className="w-full col-1-2 float-left mt-10 mb-5 clear-left"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           The Next Stage of Evolution
         </h5>
 
         <div className="w-full flex flex-wrap flex-col justify-center mb-10  md:justify-between md:mb-20 md:flex-nowrap">
-          <div className="w-full flex justify-between md:col-1-3" id="PRVI">
-            <div className="mb-5 w-full md:col-1-3">
+          <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
+            <div
+              className="mb-5 w-full max-w mr-16"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <p className="font-bold">Create</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -185,7 +269,13 @@ const TimeLine = () => {
               </ul>
             </div>
 
-            <div className="mb-14 w-full md:col-1-3">
+            <div
+              className="mb-14 w-full max-w"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <p className="font-bold">Search </p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -201,8 +291,14 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div id="DRUGI" className="w-full md:col-1-3">
-            <div className="w-full md:col-1-2">
+          <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
+            <div
+              className="w-full max-w mr-16"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <p className="font-bold">Suggested</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -215,7 +311,13 @@ const TimeLine = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-full md:col-1-3">
+            <div
+              className="w-full max-w"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <p className="font-bold">Profile</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -234,19 +336,45 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={slide3} className="image" alt="slide-3" />
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={threephones} className="image" alt="three phones" />
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={twophones} className="image" alt="two phones" />
         </div>
 
-        <div className="my-2.5">
+        <div
+          className="my-2.5"
+          data-aos-
+          className="w-full max-w"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <Image src={iphoneIpad} className="image" alt="Iphone and Ipad" />
         </div>
       </div>

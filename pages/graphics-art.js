@@ -8,28 +8,50 @@ const GraphicsArt = () => {
   return (
     <>
       <div className="container mx-auto">
-        <h6 className="text-silver mb-2.5">Posters and Graphic Art</h6>
-        <h5 className="mt-0">Showcasing some of my personal projects</h5>
-        {/* <div class="grid grid-rows-3 grid-flow-col gap-4">
-          <div class="row-span-1 md:row-span-3">
-            <Image src={poster2} alt="Bagzi Studio on building" />
-          </div>
-          <div class="col-span-1 md:col-span-2">
-            <Image src={logo} alt="Bagzi Studio Logo mockup" />
-          </div>
-          <div class="row-span-1 col-span-1 md:row-span-2 md:col-span-2">
-            <Image src={poster1} alt="Bagzi Studio commercial" />
-          </div>
-        </div> */}
+        <h6
+          className="text-silver mb-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Posters and Graphic Art
+        </h6>
+        <h5
+          className="mt-0"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Showcasing some of my personal projects
+        </h5>
         <div className="flex items-center flex-wrap md:flex-nowrap">
-          <div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <Image src={poster2} alt="Bagzi Studio on building" />
           </div>
           <div className="ml-0 mb-5 md:ml-5 md:mb-0">
-            <div className="mb-5 mt-5 md:mt-0">
+            <div
+              className="mb-5 mt-5 md:mt-0"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <Image src={logo} alt="Bagzi Studio Logo mockup" />
             </div>
-            <div className="self-end">
+            <div
+              className="self-end"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <Image src={poster1} alt="Bagzi Studio commercial" />
             </div>
           </div>
