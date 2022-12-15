@@ -12,7 +12,7 @@ const Hero = () => {
           <h1
             className="probica text-primary text-center md:text-left text-uppercase"
             data-aos="fade-up"
-            data-aos-delay="50"
+            data-aos-delay="51"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
@@ -21,7 +21,7 @@ const Hero = () => {
           <span
             className="block text-xl text-center font-normal leading-9  md:text-left md:text-5xl md:leading-[78px]"
             data-aos="fade-up"
-            data-aos-delay="50"
+            data-aos-delay="52"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
@@ -30,7 +30,7 @@ const Hero = () => {
           <span
             className="block text-4xl leading-9 text-center font-extrabold md:text-left md:text-7xl md:leading-[78px]"
             data-aos="fade-up"
-            data-aos-delay="50"
+            data-aos-delay="53"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
         <div
           className="w-full flex justify-center order-1  md:order-2 md:w-2/5"
-          data-aos="fade-up"
+          data-aos="fade-left"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
