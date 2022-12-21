@@ -13,7 +13,7 @@ const Interface = () => {
 
   const toggleFun = () => setToggle(!toggle);
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
         <Link href="/" legacyBehavior>
           <Image src={logo} alt="Bagzi studio logo" />
@@ -23,7 +23,7 @@ const Interface = () => {
             className={classNames(
               `${
                 toggle && styles.open
-              } my-5 flex p-0 items-center list-none text-white md:my-0`
+              }  flex p-0 items-center list-none text-white md:my-0`
             )}
           >
             {isContact ? (
@@ -42,12 +42,12 @@ const Interface = () => {
                   <Link href="/">Contact</Link>
                 </li>
                 <li className="mr-4">
-                  <Link href="about-me" target="_blank">
+                  <Link href="/about-me" target="_blank">
                     About Me
                   </Link>
                 </li>
                 <li className="mr-4">
-                  <Link href="/">Projects</Link>
+                  <Link href="#perosnal">Projects</Link>
                 </li>
                 <li className="mr-4">
                   <Link href="/">Home</Link>

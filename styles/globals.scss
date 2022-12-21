@@ -19,7 +19,8 @@
     @apply text-base font-bold my-5 leading-6 tracking-wide md:leading-relaxed md:my-10 md:text-3xl;
   }
   h6 {
-    @apply uppercase text-base  leading-7  tracking-[9px] font-medium;
+    @apply uppercase  md:text-base  leading-7  tracking-[9px] font-medium;
+    // text-xs
   }
   a {
     @apply not-italic;
@@ -28,13 +29,13 @@
     @apply text-base tracking-wide leading-7 md:leading-8 md:text-xl;
   }
   small {
-    @apply text-base;
+    @apply text-sm md:text-base;
   }
   input {
     @apply text-black pl-5 py-1 border-silver border border-solid rounded h-10;
   }
   textarea {
-    @apply text-black border-silver border border-solid rounded h-60;
+    @apply text-black border-silver pl-5 pt-2.5 border border-solid rounded h-60;
   }
 }
 @tailwind components;

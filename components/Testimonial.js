@@ -1,45 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Slider from "react-slick";
 import { testimonialReviews } from "../datas";
 import { AiFillStar } from "react-icons/ai";
-import { AiOutlineArrowLeft } from "react-icons/ai";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import cloud from "../assets/img/slider/cloud.svg";
 
 const Testimonial = () => {
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "transparent",
-          color: "black",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
+  let slider = useRef();
 
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "transparent",
-          color: "black",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
+  const next = () => {
+    slider.current.slickNext();
+  };
+  const previous = () => {
+    slider.current.slickPrev();
+  };
 
   const settings = {
     dots: false,
@@ -47,8 +24,7 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -81,7 +57,7 @@ const Testimonial = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="mb-28">
+      <div className="mb-28 relative">
         <span
           data-aos="fade-up"
           data-aos-delay="50"
@@ -99,7 +75,8 @@ const Testimonial = () => {
         >
           Testimonials
         </h4>
-        <Slider {...settings}>
+
+        <Slider ref={(c) => (slider.current = c)} {...settings}>
           {testimonialReviews.map((item) => (
             <div
               key={item.id}
@@ -116,7 +93,9 @@ const Testimonial = () => {
                 <AiFillStar color="#EEC01C" />
                 <AiFillStar color="#EEC01C" />
               </div>
-              <small className="leading-6 tracking-widest">{item.title}</small>
+              <span className="text-xs md:tracking-widest md:text-base">
+                {item.title}
+              </span>
               <div className="flex justify-between items-center w-full mt-12">
                 <div className="flex items-center ">
                   <Image
@@ -127,8 +106,12 @@ const Testimonial = () => {
                     alt="user picture"
                   />
                   <div className="flex flex-col ml-4">
-                    <span>{item.name}</span>
-                    <span>{item.position}</span>
+                    <span className="text-sm font-medium md:text-lg">
+                      {item.name}
+                    </span>
+                    <span className="text-xs md:text-base">
+                      {item.position}
+                    </span>
                   </div>
                 </div>
                 <div>
@@ -138,6 +121,16 @@ const Testimonial = () => {
             </div>
           ))}
         </Slider>
+        <div className="absolute right-8 mt-4">
+          <button className="mr-2.5" onClick={previous}>
+            {" "}
+            <BsArrowLeft fontSize="1.5rem" />{" "}
+          </button>
+          <button onClick={next}>
+            {" "}
+            <BsArrowRight fontSize="1.5rem" />{" "}
+          </button>
+        </div>
       </div>
     </div>
   );

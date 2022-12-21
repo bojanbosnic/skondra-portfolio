@@ -44,6 +44,13 @@
   }
 }
 
+.contact-form-col {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: calc(50% - 16px);
+  }
+}
+
 .li-activity {
   font-size: 16px;
   line-height: 28px;
@@ -75,11 +82,14 @@
     transition: 0.5s ease;
     background: rgba(51, 51, 51, 0.26);
     .text {
+      @media (min-width: 768px) {
+        padding: 38px 27px;
+      }
       position: absolute;
       border: 1px solid #fff;
       background-color: #fff;
       border-radius: 50%;
-      padding: 38px 27px;
+      padding: 28px 17px;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -96,6 +106,13 @@
   height: auto;
 }
 
+.clients-imgs {
+  width: 80%;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
 .footer-contact {
   display: flex;
   justify-content: center;
@@ -103,7 +120,7 @@
   color: #ffffff;
   height: 100%;
   background-color: #000000;
-  background: url("../assets//img/vector-footer.svg");
+  background: url("../assets//img/jebote.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -114,11 +131,11 @@
 
 .slick-arrow.slick-prev {
   top: 100%;
-  left: 80%;
+  left: 0%;
 }
 .slick-arrow.slick-next {
   top: 100%;
-  right: 15%;
+  right: 0%;
 }
 
 .slick-list {

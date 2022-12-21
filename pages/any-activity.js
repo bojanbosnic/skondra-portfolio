@@ -27,9 +27,9 @@ const TimeLine = () => {
           data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver mb-2.5">Case Study</h6>
-          <h5 className="mb-2.5">
-            TimeLine -
-            <span className="font-normal"> Event attendance Application</span>{" "}
+          <h5 className="text-2xl md:text-3xl my-2.5">
+            ANI ACTIVITY -
+            <span className="font-normal"> Event Social Media App</span>{" "}
           </h5>
           <h6 className="text-silver mb-2.5">My Role</h6>
           <p className="mb-1.5">Creative Direction</p>
@@ -66,7 +66,7 @@ const TimeLine = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
+          <h5 className="font-semibold text-2xl mb-2.5 mt-6 md:mt-12 md:text-xl">
             The Next Stage of Evolution
           </h5>
           <span className="uppercase text-sm font-medium mb-2.5">
@@ -134,7 +134,7 @@ const TimeLine = () => {
           </h5>
           <div className="flex items-center my-5">
             <Image src={individuals} alt="Individuals" className="mr-2.5" />
-            <div>
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Individuals</p>
               <small>
                 Looking for exercise but has differing schedules to friends.
@@ -150,7 +150,7 @@ const TimeLine = () => {
             data-aos-easing="ease-in-out"
           >
             <Image src={retirees} alt="Retirees" className="mr-2.5" />
-            <div>
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Retirees</p>
               <small>
                 Time rich and looking for activities to keep fit and healthy.
@@ -166,7 +166,7 @@ const TimeLine = () => {
             data-aos-easing="ease-in-out"
           >
             <Image src={corporates} alt="Corporates" className="mr-2.5" />
-            <div>
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Corporates</p>
               <small>
                 Time poor and looking for flexible options, a variety of
@@ -177,15 +177,15 @@ const TimeLine = () => {
 
           <div
             className="flex items-center my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <div>
-              <Image src={couples} alt="Couples" />
+              <Image src={couples} alt="Couples" className="block" />
             </div>
-            <div className="ml-2.5">
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Couples</p>
               <small>
                 Looking to branch out, meet new people and be active whilst
@@ -206,7 +206,7 @@ const TimeLine = () => {
               alt="New to Communitie"
               className="mr-2.5"
             />
-            <div>
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">
                 Way to connect to our new communities
               </p>
@@ -224,7 +224,7 @@ const TimeLine = () => {
             data-aos-easing="ease-in-out"
           >
             <Image src={families} alt="families" className="mr-2.5" />
-            <div>
+            <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Families</p>
               <small>
                 Families can participate in activities with no age barrier.
@@ -243,10 +243,10 @@ const TimeLine = () => {
           The Next Stage of Evolution
         </h5>
 
-        <div className="w-full flex flex-wrap flex-col justify-center mb-10  md:justify-between md:mb-20 md:flex-nowrap">
+        <div className="w-full md:grid-cols-1 mb-10  md:mb-20 ">
           <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
             <div
-              className="mb-5 w-full max-w mr-16"
+              className="mb-1.5 w-full  max-w mr-16"
               data-aos="fade-up"
               data-aos-delay="50"
               data-aos-duration="1000"
@@ -269,7 +269,7 @@ const TimeLine = () => {
             </div>
 
             <div
-              className="mb-14 w-full max-w"
+              className="mb-1.5 w-full max-w"
               data-aos="fade-up"
               data-aos-delay="50"
               data-aos-duration="1000"
@@ -292,11 +292,11 @@ const TimeLine = () => {
 
           <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
             <div
-              className="w-full max-w mr-16"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              className="w-full mb-1.5 max-w mr-16"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               <p className="font-bold">Suggested</p>
               <ul className="list-disc pl-8">
@@ -312,10 +312,10 @@ const TimeLine = () => {
             </div>
             <div
               className="w-full max-w"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               <p className="font-bold">Profile</p>
               <ul className="list-disc pl-8">

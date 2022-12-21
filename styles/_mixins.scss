@@ -1,0 +1,44 @@
+$screenValue: 14.4;
+
+@function size($value) {
+  $vwValue: (1 * $value / $screenValue) + vw;
+  @return $vwValue;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .contact-form-height {
+    height: size(790);
+    padding: size(40);
+    margin-top: size(169);
+    margin-bottom: size(65);
+  }
+
+  .contact-card {
+    margin-top: size(169);
+  }
+  .card-heading {
+    font-size: size(50);
+  }
+
+  .head-quarter {
+    font-size: size(38);
+    line-height: size(57);
+  }
+  .location {
+    font-size: size(24);
+    line-height: size(36);
+    margin-top: size(36);
+  }
+  .lets-talk {
+    font-size: size(30);
+    line-height: size(45);
+  }
+  .lets-talk-paragraph {
+    font-size: size(18);
+    line-height: size(32);
+  }
+  label {
+    font-size: size(18);
+    line-height: size(32);
+  }
+}

@@ -12,14 +12,14 @@ const Contact = () => {
       data-aos-easing="ease-in-out"
     >
       <div className="container mx-auto">
-        <div className="pt-0 pb-0 md:pt-28 md:pb-48 flex justify-center flex-col items-center text-black">
-          <div className=" max-w-[606px] text-center mb-10">
+        <div className="pt-16 pb-6 md:pt-28 md:pb-20 flex justify-center flex-col items-center text-black">
+          <div className="mb-5 max-w-[259px] md:max-w-[606px] text-center md:mb-14">
             <span className="block text-base font-semibold leading-normal md:text-5xl">
               Interested Working With me? Let&apos;s connect!
             </span>
           </div>
-          <div className="">
-            <button className="flex items-center upppercase rounded-lg p-4 bg-black text-white">
+          <div>
+            <button className="flex items-center px-2.5 py-2 upppercase rounded-lg  bg-black text-white md:px-8 md:py-6">
               <Image src={email} alt="email icon" />
               <span className="ml-2.5">Contact Me</span>
             </button>

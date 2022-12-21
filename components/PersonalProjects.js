@@ -6,7 +6,7 @@ import uxDesigner from "../assets/img/ux-designer.png";
 
 const PersonalProjects = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" id="perosnal">
       <span
         className="text-sm tracking-[9px] leading-7 font-medium"
         data-aos="fade-up"
@@ -31,7 +31,7 @@ const PersonalProjects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <div class="w-full overflow-hidden rounded-2xl mr-10 bg-white border-transparent mb-5 md:mb-0 md:w-1/2">
+        <div class="w-full overflow-hidden rounded-2xl mr-0 bg-white border-transparent mb-5 md:mb-0 md:mr-10 md:w-1/2">
           <div className="overlay-container">
             <Image
               src={uxDesigner}
@@ -50,7 +50,7 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="text-lg mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               UI Shoots
             </h5>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -77,7 +77,7 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-lg  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Graphic Design
             </h5>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

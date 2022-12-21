@@ -11,7 +11,6 @@ module.exports = {
         sm: "2rem",
         lg: "4rem",
         xl: "7.25rem",
-        "2xl": "10rem",
       },
     },
 

@@ -20,22 +20,19 @@ const TimeLine = () => {
           data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver mb-2.5">Case Study</h6>
-          <h5 className="my-2.5">
-            OPG Market-
-            <span className="font-normal">
-              {" "}
-              Homemade farmer products store
-            </span>{" "}
+          <h5 className="text-2xl md:text-3xl my-2.5">
+            TimeLine -
+            <span className="font-normal"> Event attendance Application</span>{" "}
           </h5>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          <span className="mb-2.5 uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
             My Role
           </span>
-          <p className="mb-2.5">Creative Direction</p>
-          <p>Product Designer</p>
+          <p className="mb-1.5">Creative Direction</p>
+          <p className="my-0">Product Designer</p>
           <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
             Client
           </span>
-          <p>Freelance Project </p>
+          <p>IT Tesla Solutions</p>
           <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
             Year
           </span>
@@ -67,7 +64,9 @@ const TimeLine = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h5 className="leading-snug mb-2.5 mt-5 text-3xl">Project Goal</h5>
+          <h5 className="leading-snug mt-7 mb-2.5 md:mt-5 text-3xl">
+            Project Goal
+          </h5>
           <div className="my-2.5">
             <p className="font-semibold">Gaining a Clear Picture of Your ROI</p>
             <p>
@@ -124,19 +123,19 @@ const TimeLine = () => {
           data-aos-easing="ease-in-out"
         >
           <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Market</h5>
-          <div className="my-2.5">
+          <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Event Organizers </p>
             <p>Business value add to get events</p>
           </div>
-          <div className="my-2.5">
+          <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Event Venues</p>
             <p> Provide analysis of the event venue</p>
           </div>
-          <div className="my-2.5">
+          <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Trade Shows</p>
             <p> Monitor visitors who entered the trade show</p>
           </div>
-          <div className="my-2.5">
+          <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Market Stores</p>
             <p>
               Monitor customer timeline. Where the customer spent the most time
@@ -144,7 +143,7 @@ const TimeLine = () => {
               within the shop or its last seen locaiton
             </p>
           </div>
-          <div className="my-2.5">
+          <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Music Concerts</p>
             <p>Monitor crowed movement (e.g. Exit)</p>
             <p>Monitor drink/food stands</p>

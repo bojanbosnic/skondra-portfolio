@@ -43,11 +43,11 @@ const About = () => {
             solo and leading small design teams. In my spare time I enjoy
             travel, photography and tattoos.
           </p>
-          <div className="mb-12">
+          <div className="mb-8 md:mb-12">
             <Image src={aboutMePic} alt="Dejan's picture" className="image" />
           </div>
           <h6> Work Experience</h6>
-          <h5 className="font-medium mt-2.5 mb-9">
+          <h5 className="font-medium mt-1 md:mt-2.5 mb-9">
             I’ve been lucky enough to establish relationships with amazing
             clients from all over the world, ranging from individual clients,
             through up-and-coming startups, to multinational companies. For more
@@ -116,7 +116,7 @@ const About = () => {
           </div>
         </div>
         <div className="text-center my-9">
-          <h6>Clients</h6>
+          <h6 className="leading-3 md:leading-7  tracking-[9px]">Clients</h6>
           <h5 className="font-medium my-1.5 md:my-2.5">
             Some of the brands I have worked with
           </h5>
@@ -127,24 +127,24 @@ const About = () => {
             </small>
           </p>
         </div>
-        <div className="flex items-center justify-around mb-14">
+        <div className="flex items-center flex-wrap justify-around mb-14">
           <div>
-            <Image src={digivox} alt="" />
+            <Image src={digivox} alt="" className="clients-imgs" />
           </div>
           <div>
-            <Image src={njuko} alt="" />
+            <Image src={njuko} alt="" className="clients-imgs" />
           </div>
           <div>
-            <Image src={eye} alt="" />
+            <Image src={eye} alt="" className="clients-imgs" />
           </div>
           <div>
-            <Image src={itt} alt="" />
+            <Image src={itt} alt="" className="clients-imgs" />
           </div>
           <div>
-            <Image src={onetime} alt="" />
+            <Image src={onetime} alt="" className="clients-imgs" />
           </div>
           <div>
-            <Image src={run4reef} alt="" />
+            <Image src={run4reef} alt="" className="clients-imgs" />
           </div>
         </div>
       </div>
