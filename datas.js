@@ -2,7 +2,6 @@ import gradimir from "./assets/img/slider/gradimirstankovic.png";
 import mirko from "./assets/img/slider/Mirko Markovic.png";
 import strahinja from "./assets/img/slider/strahinjababic.png";
 import philip from "./assets/img/slider/Philip Almond.png";
-// console.log(philip.src);
 export const testimonialReviews = [
   {
     id: 1,
