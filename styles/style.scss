@@ -141,6 +141,8 @@
 }
 
 .slick-slide > div {
+  position: relative;
+  padding-bottom: 8rem;
   border: transparent;
   border-radius: 24px;
   background-color: white;

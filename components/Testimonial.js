@@ -27,11 +27,21 @@ const Testimonial = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
           infinite: true,
           dots: false,
         },
@@ -44,14 +54,14 @@ const Testimonial = () => {
           initialSlide: 1,
         },
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     initialSlide: 1,
+      //   },
+      // },
     ],
   };
 
@@ -90,7 +100,7 @@ const Testimonial = () => {
                   {item.title}
                 </span>
               </div>
-              <div className="flex justify-between items-center w-full ">
+              <div className="flex justify-between items-center w-full absolute bottom-8">
                 <div className="flex items-center pl-10">
                   <Image
                     src={item.picture}

@@ -4,13 +4,7 @@ import email from "../assets/img/email-icon.svg";
 
 const Contact = () => {
   return (
-    <div
-      className="footer-contact"
-      data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-    >
+    <div className="footer-contact">
       <div className="container mx-auto">
         <div className="pt-16 pb-6 md:pt-28 md:pb-20 flex justify-center flex-col items-center text-black">
           <div className="mb-5 max-w-[259px] md:max-w-[606px] text-center md:mb-14">
