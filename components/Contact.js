@@ -21,7 +21,9 @@ const Contact = () => {
           <div>
             <button className="flex items-center px-2.5 py-2 upppercase rounded-lg  bg-black text-white md:px-8 md:py-6">
               <Image src={email} alt="email icon" />
-              <span className="ml-2.5">Contact Me</span>
+              <a className="ml-2.5" href="mailto:skondraart@gmail.com">
+                Contact Me
+              </a>
             </button>
           </div>
         </div>

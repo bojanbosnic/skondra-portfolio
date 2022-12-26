@@ -5,40 +5,74 @@ $screenValue: 14.4;
   @return $vwValue;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .contact-form-height {
-    height: size(790);
-    padding: size(40);
-    margin-top: size(169);
-    margin-bottom: size(65);
-  }
+// @media only screen and (min-width: 769px) and (max-width: 1439px) {
+//   .contact-form-height {
+//     margin-top: size(150);
+//     margin-bottom: size(65);
+//   }
 
-  .contact-card {
-    margin-top: size(169);
-  }
-  .card-heading {
-    font-size: size(50);
-  }
+//   .contact-card {
+//     margin-top: size(169);
+//   }
+//   .card-heading {
+//     font-size: size(50);
+//   }
 
-  .head-quarter {
-    font-size: size(38);
-    line-height: size(57);
-  }
-  .location {
-    font-size: size(24);
-    line-height: size(36);
-    margin-top: size(36);
-  }
-  .lets-talk {
-    font-size: size(30);
-    line-height: size(45);
-  }
-  .lets-talk-paragraph {
-    font-size: size(18);
-    line-height: size(32);
-  }
-  label {
-    font-size: size(18);
-    line-height: size(32);
-  }
-}
+//   .head-quarter {
+//     font-size: size(38);
+//     line-height: size(57);
+//   }
+//   .location {
+//     font-size: size(24);
+//     line-height: size(36);
+//     margin-top: size(36);
+//   }
+// }
+
+// @media only screen and (min-width: 1440px) {
+//   .contact-form-height {
+//     height: size(690);
+//     padding: size(40);
+//     margin-top: size(69);
+//     margin-bottom: size(5);
+//   }
+
+//   .proba {
+//     color: red;
+//   }
+
+//   .contact-card {
+//     margin-top: size(69);
+//   }
+//   .card-heading {
+//     font-size: size(50);
+//   }
+
+//   .head-quarter {
+//     font-size: size(38);
+//     line-height: size(57);
+//   }
+//   .location {
+//     font-size: size(24);
+//     line-height: size(36);
+//     margin-top: size(36);
+//   }
+//   .lets-talk {
+//     padding-top: size(10);
+//     font-size: size(30);
+//     line-height: size(45);
+//   }
+//   .lets-talk-paragraph {
+//     font-size: size(18);
+//     line-height: size(32);
+//   }
+
+//   .text-area {
+//     height: size(16);
+//   }
+
+//   label {
+//     font-size: size(18);
+//     line-height: size(32);
+//   }
+// }

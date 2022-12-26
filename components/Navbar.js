@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import logo from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
+import { Link } from "react-scroll";
+// import Link from "next/link";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,11 +14,11 @@ const Interface = () => {
 
   const toggleFun = () => setToggle(!toggle);
   return (
-    <div className="container mx-auto ">
+    <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
-        <Link href="/" legacyBehavior>
+        <a href="/" legacyBehavior>
           <Image src={logo} alt="Bagzi studio logo" />
-        </Link>
+        </a>
         <div className={`${styles.siteNavbar} md:w-full md:min-wi-min`}>
           <ul
             className={classNames(
@@ -39,18 +40,28 @@ const Interface = () => {
             ) : (
               <>
                 <li onClick={(e) => setIsContact(true)} className="mr-4">
-                  <Link href="/">Contact</Link>
+                  <a href="#contact">Contact</a>
                 </li>
                 <li className="mr-4">
-                  <Link href="/about-me" target="_blank">
-                    About Me
+                  <a href="/about-me">About Me</a>
+                </li>
+                <li className="mr-4">
+                  <Link
+                    className="cursor-pointer"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    onClick={toggleFun}
+                  >
+                    Projects
                   </Link>
                 </li>
                 <li className="mr-4">
-                  <Link href="#perosnal">Projects</Link>
-                </li>
-                <li className="mr-4">
-                  <Link href="/">Home</Link>
+                  <a href="/" onClick={toggleFun} className="cursor-pointer">
+                    Home
+                  </a>
                 </li>
               </>
             )}

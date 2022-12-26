@@ -31,24 +31,25 @@
   small {
     @apply text-sm md:text-base;
   }
+
   input {
-    @apply text-black pl-5 py-1 border-silver border border-solid rounded h-10;
+    @apply text-black h-7 md:h-10 pl-5 py-1 border-silver border border-solid rounded;
   }
   textarea {
-    @apply text-black border-silver pl-5 pt-2.5 border border-solid rounded h-60;
+    @apply text-black h-24 border-silver md:h-48 pl-5 pt-2.5 border border-solid rounded;
   }
 }
 @tailwind components;
 @tailwind utilities;
 
-// html {
-//     scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 
-//     .scroll-element {
-//         scroll-margin: 100px 0 0 50px;
-//       }
+  // .scroll-element {
+  //     scroll-margin: 100px 0 0 50px;
+  //   }
 
-//       .projects{
-//         scroll-margin: -110px 0 0 50px;
-//       }
-//   }
+  //   .projects{
+  //     scroll-margin: -110px 0 0 50px;
+  //   }
+}

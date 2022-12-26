@@ -7,6 +7,8 @@ import behance from "../assets/img/3.svg";
 import linkedin from "../assets/img/4.svg";
 import dribble from "../assets/img/5.svg";
 import Contact from "./Contact";
+import { Link } from "react-scroll";
+// import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -26,11 +28,48 @@ const Footer = () => {
               </div>
               <nav className="mt-16 hidden underline md:block">
                 <ul className="flex  items-center justify-start flex-wrap">
-                  <li className="mr-10">Home</li>
-                  <li className="mr-10">About Me</li>
-                  <li className="mr-10">Portfolio</li>
-                  <li className="mr-10">Testemonials</li>
-                  <li className="mr-10">Contact</li>
+                  <li className="mr-10">
+                    <Link
+                      className="cursor-pointer"
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li className="mr-10">
+                    <a href="about-me">About Me</a>
+                  </li>
+                  <li className="mr-10">
+                    <Link
+                      className="cursor-pointer"
+                      to="projects"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li className="mr-10">
+                    <Link
+                      className="cursor-pointer"
+                      to="testemonials"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Testemonials
+                    </Link>
+                  </li>
+                  <li className="mr-10">
+                    <a href="mailto:skondraart@gmail.com">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>

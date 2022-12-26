@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import personalImg from "../assets/img/personal-picture.png";
 import Navbar from "./Navbar";
 
 const Hero = () => {
+  const projects = useRef(null);
+
+  const scrollToSection = (element) => {
+    window.scrollTo({ top: element.current.offsetTop, behavior: "smooth" });
+  };
+
   return (
     <div className="container mx-auto">
       <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap">
@@ -55,9 +61,18 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <Link href="#projects">View Projects</Link>{" "}
+            <Link
+              className="cursor-pointer"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              View Projects
+            </Link>{" "}
             <span className="font-medium mx-2.5  text-silver md:mx-7">or</span>{" "}
-            <Link href="about-me">Read About Me</Link>
+            <a href="about-me">Read About Me</a>
           </h3>
         </div>
         <div

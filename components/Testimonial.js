@@ -56,7 +56,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div id="testemonials" className="container mx-auto">
       <div className="mb-28 relative">
         <span
           data-aos="fade-up"
@@ -68,36 +68,30 @@ const Testimonial = () => {
         </span>
         <h4
           className="mb-9"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
-          Testimonials
+          Testemonials
         </h4>
-
         <Slider ref={(c) => (slider.current = c)} {...settings}>
           {testimonialReviews.map((item) => (
-            <div
-              key={item.id}
-              className="card"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
-              <div className="flex mb-5">
-                <AiFillStar color="#EEC01C" />
-                <AiFillStar color="#EEC01C" />
-                <AiFillStar color="#EEC01C" />
-                <AiFillStar color="#EEC01C" />
-                <AiFillStar color="#EEC01C" />
+            <>
+              <div className="px-10 pt-11 flex flex-col">
+                <div className="flex mb-5">
+                  <AiFillStar color="#EEC01C" />
+                  <AiFillStar color="#EEC01C" />
+                  <AiFillStar color="#EEC01C" />
+                  <AiFillStar color="#EEC01C" />
+                  <AiFillStar color="#EEC01C" />
+                </div>
+                <span className="text-xs md:tracking-widest md:text-base">
+                  {item.title}
+                </span>
               </div>
-              <span className="text-xs md:tracking-widest md:text-base">
-                {item.title}
-              </span>
-              <div className="flex justify-between items-center w-full mt-12">
-                <div className="flex items-center ">
+              <div className="flex justify-between items-center w-full ">
+                <div className="flex items-center pl-10">
                   <Image
                     src={item.picture}
                     width={60}
@@ -114,11 +108,11 @@ const Testimonial = () => {
                     </span>
                   </div>
                 </div>
-                <div>
+                <div className="pr-12">
                   <Image src={cloud} alt="cloud" />
                 </div>
               </div>
-            </div>
+            </>
           ))}
         </Slider>
         <div className="absolute right-8 mt-4">

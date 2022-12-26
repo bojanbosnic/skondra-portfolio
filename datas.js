@@ -16,7 +16,7 @@ export const testimonialReviews = [
     title:
       " Working with Dejan was a great decision, and if you are thinking of doing the same, consider this a very strong vote in his direction. Both his obvious skill level and his impressive resume inspire confidence, and working with him was a pleasure.",
     name: "Gradimir Stankovic",
-    position: "Travel Photographer",
+    position: "CEO at Digivox",
     picture: `${gradimir.src}`,
   },
   {
@@ -24,7 +24,7 @@ export const testimonialReviews = [
     title:
       " I had a fantastic experience working with Dejan throughout the whole design process. He communicates clearly and with expedience. Dejan shows his talent by being able to take my vision/mission and building it into a design that captures it precisely. ",
     name: "Mirko Markovic",
-    position: "CEO at BBT Service",
+    position: "Travel Photographer",
     picture: `${mirko.src}`,
   },
   {
