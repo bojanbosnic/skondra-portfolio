@@ -70,8 +70,8 @@ const Interface = () => {
         </div>
         <button
           className={classNames(
-            `${
-              toggle && styles.togglerOpen
+            `${toggle && styles.togglerOpen}  ${
+              isContact && "close-btn"
             } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-6  z-30`
           )}
           onClick={(e) => {
@@ -79,20 +79,16 @@ const Interface = () => {
           }}
         >
           {toggle ? (
-            <span
-              className={classNames(
-                `${
-                  isContact && "fixed"
-                } font-semibold uppercase z-30 text-white mr-2.5`
-              )}
-            >
+            <span className="font-semibold uppercase z-30 text-white mr-2.5">
               Close
             </span>
           ) : (
-            <span className="font-semibold uppercase mr-2.5">Menu</span>
+            <span className="font-semibold uppercase mr-2.5 text-black">
+              Menu
+            </span>
           )}
           <span
-            className={`${styles.spanAnimation} togglerOpen w-7 h-1 rounded-2xl bg-black block ease-in-out duration-300`}
+            className={`${styles.spanAnimation}  togglerOpen w-7 h-1 rounded-2xl bg-black block ease-in-out duration-300`}
           ></span>
         </button>
       </nav>

@@ -5,17 +5,34 @@ $screenValue: 14.4;
   @return $vwValue;
 }
 
+.close-btn {
+  position: fixed;
+  right: 5rem;
+  top: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  height: 25px;
+}
+
+.text-area {
+  max-height: 50px;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1439px) {
   .contact-card {
     margin-top: size(169);
   }
   .card-heading {
     font-size: size(50);
+    line-height: size(50);
   }
 
   .head-quarter {
     font-size: size(38);
-    line-height: size(57);
+    // line-height: size(50);
   }
   .location {
     font-size: size(24);
@@ -61,6 +78,14 @@ $screenValue: 14.4;
     padding-top: 12px;
     padding-bottom: 12px;
   }
+
+  .close-btn {
+    position: fixed;
+    right: 10rem;
+    top: 1rem;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -97,7 +122,7 @@ $screenValue: 14.4;
   }
 
   .text-area {
-    height: size(130);
+    max-height: size(130);
   }
 
   .form-btn-parent {
@@ -118,5 +143,13 @@ $screenValue: 14.4;
   label {
     font-size: size(18);
     line-height: size(30);
+  }
+
+  .close-btn {
+    position: fixed;
+    right: 15.5%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
   }
 }
