@@ -48,17 +48,17 @@ const ContactForm = ({ setSuccess }) => {
         <span className="block text-xl font-bold card-heading  leading-6 pt-6 md:pt-0  text-left md:text-5xl  md:leading-[78px]">
           Contact
         </span>
-        <span className="text-base max-w-[356px] leading-6 block mb-5">
+        <span className="text-base max-w-[356px] leading-6 block mb-2.5">
           I usually work on several projects but I’ll be happy to discuss new
           opportunities. <b>Let’s get in touch!</b>
         </span>
         {/* location */}
-        <div className="bg-black border border-white  mb-5 md:mb-0 rounded-xl">
+        <div className="bg-black border max-w-[210px] border-white  mb-5 md:mb-0 rounded-xl">
           <div className="py-4">
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
               Head Quarter
             </span>
-            <span className="block px-5 mt-2.5 text-sm md:text-2xl">
+            <span className="block text-fadeWhite px-5 mt-2.5 text-sm md:text-2xl">
               <span className="block">Banja Luka, BiH</span>
               <span className="block">Kosovke Devojke 10</span>
               <span className="block">78000</span>
@@ -79,7 +79,7 @@ const ContactForm = ({ setSuccess }) => {
         <form ref={form} onSubmit={handleSubmit(sendEmail)} className="w-full">
           <div className="flex flex-wrap pt-2 md:pt-0 md:justify-between items-center w-full mb-1 md:mb-5 md:flex-nowrap">
             <div className="flex flex-col mb-2 contact-form-col">
-              <label className="text mb-.5 md:mb-1.5">Full Name</label>
+              <label className="text mb-1 md:mb-1.5">Full Name</label>
               <input
                 onChange={(e) =>
                   setFields({ ...fields, user_name: e.target.value })
@@ -98,7 +98,7 @@ const ContactForm = ({ setSuccess }) => {
             </div>
 
             <div className="flex contact-form-col mb-2 flex-col ">
-              <label className="text mb-.5 md:mb-1.5">Email</label>
+              <label className="text mb-1 md:mb-1.5">Email</label>
               <input
                 type="email"
                 name="user_email"
@@ -115,7 +115,7 @@ const ContactForm = ({ setSuccess }) => {
           </div>
 
           <div className="flex w-full flex-col mb-2 md:mb-5">
-            <label className="text mb-.5 md:mb-1.5">Subject</label>
+            <label className="text-base mb-1 md:mb-1.5">Subject</label>
             <input
               className="w-full placeholder:text-xs md:placeholder:text-base"
               name="user_subject"
@@ -131,7 +131,7 @@ const ContactForm = ({ setSuccess }) => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text mb-.5 md:mb-1.5">Message</label>
+            <label className="text mb-1 md:mb-1.5">Message</label>
             <textarea
               name="user_message"
               className="text-area placeholder:text-xs md:placeholder:text-base text-area"
@@ -145,10 +145,10 @@ const ContactForm = ({ setSuccess }) => {
             )}
           </div>
 
-          <div className="flex form-btn-parent mt-4 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
+          <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
             <button
               type="submit"
-              className="text-xs form-btn rounded-lg py-2 px-10 bg-black text-white md:text-base md:py-5"
+              className="text-xs form-btn rounded md:rounded-lg py-2 px-10 bg-black text-white md:text-base md:py-5"
             >
               Send <span className="hidden md:inline">Message</span>
             </button>
