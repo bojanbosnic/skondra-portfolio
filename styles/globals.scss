@@ -33,23 +33,11 @@
   }
 
   input {
-    @apply text-black h-7 md:h-10 pl-5 py-1 border-silver border border-solid rounded;
+    @apply text-black  pl-5 py-1 border-silver border border-solid rounded-lg;
   }
   textarea {
-    @apply text-black h-24 border-silver md:h-48 pl-5 pt-2.5 border border-solid rounded;
+    @apply text-black h-24 border-silver md:h-48 pl-5 pt-2.5 border border-solid rounded-lg;
   }
 }
 @tailwind components;
 @tailwind utilities;
-
-html {
-  scroll-behavior: smooth;
-
-  // .scroll-element {
-  //     scroll-margin: 100px 0 0 50px;
-  //   }
-
-  //   .projects{
-  //     scroll-margin: -110px 0 0 50px;
-  //   }
-}

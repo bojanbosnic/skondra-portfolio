@@ -66,7 +66,7 @@ const ContactForm = ({ setSuccess }) => {
         </div>
       </div>
 
-      <div className="w-full px-7 py-2.5 md:w-[60%] h-[450px] p-10 md:h-[780px]  contact-form-height bg-white rounded-md text-black">
+      <div className="w-full px-7 py-2.5 md:w-[60%] min-h-[450px] p-10  contact-form-height bg-white rounded-md text-black">
         <h5 className="hidden pt-10 lets-talk mb-2.5 mt-0 md:block">
           Let’s Talk
         </h5>
@@ -76,11 +76,9 @@ const ContactForm = ({ setSuccess }) => {
         </span>
         {/* forma */}
         <form ref={form} onSubmit={handleSubmit(sendEmail)} className="w-full">
-          <div className="flex flex-wrap pt-4 md:justify-between items-center w-full mb-5 md:flex-nowrap">
-            <div className="flex flex-col contact-form-col mb-5">
-              <label className="text-xs mb-1.5 md:text-lg md:mb-2.5">
-                Full Name
-              </label>
+          <div className="flex flex-wrap pt-4 md:pt-0 md:justify-between items-center w-full mb-5 md:flex-nowrap">
+            <div className="flex flex-col contact-form-col">
+              <label className="text mb-1.5 md:mb-1.5">Full Name</label>
               <input
                 onChange={(e) =>
                   setFields({ ...fields, user_name: e.target.value })
@@ -96,10 +94,8 @@ const ContactForm = ({ setSuccess }) => {
               )}
             </div>
 
-            <div className="flex  contact-form-col flex-col mb-1.5">
-              <label className="text-xs mb-1.5 md:text-lg md:mb-2.5">
-                Email
-              </label>
+            <div className="flex contact-form-col flex-col ">
+              <label className="text mb-1.5 md:mb-1.5">Email</label>
               <input
                 type="email"
                 name="user_email"
@@ -114,9 +110,7 @@ const ContactForm = ({ setSuccess }) => {
           </div>
 
           <div className="flex w-full flex-col mb-5 md:mb-5">
-            <label className="text-xs mb-1.5 md:text-lg md:mb-2.5 proba">
-              Subject
-            </label>
+            <label className="text mb-1.5 md:mb-1.5">Subject</label>
             <input
               className="w-full placeholder:text-sm md:placeholder:text-base"
               name="user_subject"
@@ -132,12 +126,10 @@ const ContactForm = ({ setSuccess }) => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-xs mb-1.5 md:text-lg md:mb-2.5">
-              Message
-            </label>
+            <label className="text mb-1.5 md:mb-1.5">Message</label>
             <textarea
               name="user_message"
-              className=" placeholder:text-sm md:placeholder:text-base text-area"
+              className="text-area placeholder:text-sm md:placeholder:text-base text-area"
               placeholder="Type some texte here..."
               {...register("user_message", { required: true })}
             ></textarea>
@@ -146,7 +138,7 @@ const ContactForm = ({ setSuccess }) => {
             )}
           </div>
 
-          <div className="flex mt-5 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
+          <div className="flex form-btn-parent mt-5 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
             <button
               type="submit"
               className="text-xs form-btn rounded-lg py-3 px-10 bg-black text-white md:text-base md:py-5"
