@@ -16,6 +16,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="text-center">
           <h6
+            className="font-medium text-xs md:text-base uppercase"
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -37,7 +38,7 @@ const About = () => {
             ideas from everyday life. I am very passionate about my work and
             driven to satisfy my clients.
           </h5>
-          <p className="mt-2.5 mb-8">
+          <p className="mt-2.5 mb-8 text-sm md:text-xl">
             Over the past few years I have been working with big companies and
             rising startups around the world as a designer and artist, working
             solo and leading small design teams. In my spare time I enjoy
@@ -46,8 +47,8 @@ const About = () => {
           <div className="mb-8 md:mb-12">
             <Image src={aboutMePic} alt="Dejan's picture" className="image" />
           </div>
-          <h6> Work Experience</h6>
-          <h5 className="font-medium mt-1 md:mt-2.5 mb-9">
+          <h6 className="font-medium text-xs md:text-base"> Work Experience</h6>
+          <h5 className="font-medium text-sm mt-1 md:mt-2.5 mb-9 md:text-3xl">
             I’ve been lucky enough to establish relationships with amazing
             clients from all over the world, ranging from individual clients,
             through up-and-coming startups, to multinational companies. For more
@@ -116,12 +117,15 @@ const About = () => {
           </div>
         </div>
         <div className="text-center my-9">
-          <h6 className="leading-3 md:leading-7  tracking-[9px]">Clients</h6>
+          <h6 className="font-medium text-xs leading-3 md:leading-7 md:text-base  tracking-[9px]">
+            Clients
+          </h6>
+
           <h5 className="font-medium my-1.5 md:my-2.5">
             Some of the brands I have worked with
           </h5>
           <p>
-            <small className="font-normal text-sm leading-6 tracking-normal">
+            <small className="font-normal text-sm leading-6 tracking-normal max-w-0 md:max-w-720 md:text-xl">
               Over the past few years I’ve had the pleasure to work with
               customers from various sectors on many interesting projects.
             </small>

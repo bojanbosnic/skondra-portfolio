@@ -24,30 +24,32 @@ const TimeLine = () => {
             TimeLine -
             <span className="font-normal"> Event attendance Application</span>{" "}
           </h5>
-          <span className="mb-2.5 uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          <span className="mb-2.5 text-base leading-7 text-silver tracking-[9px] font-medium">
             My Role
           </span>
-          <p className="mb-1.5">Creative Direction</p>
-          <p className="my-0">Product Designer</p>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          <p className="mb-1.5 text-xl">Creative Direction</p>
+          <p className="my-0 text-xl">Product Designer</p>
+          <span className="text-base leading-7 text-silver tracking-[9px] font-medium">
             Client
           </span>
-          <p>IT Tesla Solutions</p>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          <span className="text-xl md:text-3xl block font-normal tracking-wide">
+            IT Tesla Solutions
+          </span>
+          <span className="text-base leading-7 text-silver tracking-[9px] font-medium">
             Year
           </span>
-          <p className="mb-7">2022</p>
+          <span className="block mb-7 text-xl tracking-wide">2021</span>
         </div>
 
-        <div
-          className="col-2 float-right"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div className="col-2 float-right">
           <Image src={timeline} alt="timeline logo" />
-          <p className="mt-5">
+          <p
+            className="mt-5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             Event attendance tracking is an important source of data for
             organizations, no matter your industry. Attendance tracking data can
             be turned into actionable insights that improve your approach to
@@ -78,7 +80,13 @@ const TimeLine = () => {
               engagement goals
             </p>
           </div>
-          <div className="my-2.5">
+          <div
+            className="my-2.5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-semibold">
               Understanding The Effectiveness of Your Marketing
             </p>
@@ -92,7 +100,13 @@ const TimeLine = () => {
               communication tactics and strategies.
             </p>
           </div>
-          <div className="my-2.5">
+          <div
+            className="my-2.5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-semibold">
               Meeting (or Exceeding) Attendance Requirements
             </p>
@@ -103,7 +117,13 @@ const TimeLine = () => {
               proof.
             </p>
           </div>
-          <div className="my-2.5">
+          <div
+            className="my-2.5"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <p className="font-semibold">
               Ensuring Safety and Security Strategies are Successful
             </p>

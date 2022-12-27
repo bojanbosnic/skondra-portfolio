@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap">
         <div className="w-full order-2 md:order-1 md:w-3/5">
           <h1
-            className="probica text-primary text-center md:text-left text-uppercase"
+            className=" text-primary text-center md:text-left uppercase"
             data-aos="fade-up"
             data-aos-delay="51"
             data-aos-duration="1000"

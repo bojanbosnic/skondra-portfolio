@@ -144,8 +144,18 @@
   position: relative;
   padding-bottom: 8rem;
   border: transparent;
-  border-radius: 24px;
+  border-radius: 13px;
   background-color: white;
+  @media only screen and (min-width: 768px) {
+    border-radius: 24px;
+  }
+}
+
+.clients-imgs {
+  width: 49px;
+  @media only screen and (min-width: 768px) {
+    width: 150px;
+  }
 }
 
 .slick-arrow.slick-prev {

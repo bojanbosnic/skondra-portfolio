@@ -8,13 +8,13 @@ const PersonalProjects = () => {
   return (
     <div className="container mx-auto" id="perosnal">
       <span
-        className="text-sm tracking-[9px] leading-7 font-medium"
+        className="text-sm tracking-[9px] md:leading-7 font-medium"
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        Graphics and Personal Projects
+        Graphics <span className="hidden md:block">and Personal Projects</span>
       </span>
       <h4
         data-aos="fade-up"
@@ -50,10 +50,10 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="text-lg mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="text-base leading-4 mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               UI Shoots
             </h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">
               Examples so you have a better understanding of my style
             </p>
           </div>
@@ -77,10 +77,10 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="mb-2 text-lg  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 text-base leading-4  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Graphic Design
             </h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">
               Showcasing some graphic desgin as well as my personal projects
             </p>
           </div>

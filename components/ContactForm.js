@@ -53,7 +53,7 @@ const ContactForm = ({ setSuccess }) => {
           opportunities. <b>Let’s get in touch!</b>
         </span>
         {/* location */}
-        <div className="bg-black border max-w-[210px] border-white  mb-5 md:mb-0 rounded-xl">
+        <div className="bg-black border max-w-[210px] md:max-w-full border-white  mb-5 md:mb-0 rounded-xl">
           <div className="py-4">
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
               Head Quarter

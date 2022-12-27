@@ -32,10 +32,10 @@ const TimeLine = () => {
             <span className="font-normal"> Event Social Media App</span>{" "}
           </h5>
           <h6 className="text-silver mb-2.5">My Role</h6>
-          <p className="mb-1.5">Creative Direction</p>
-          <p className="mb-2.5">Product Designer</p>
+          <p className="mb-1.5 text-xl">Creative Direction</p>
+          <p className="mb-2.5 text-xl">Product Designer</p>
           <h6 className="text-silver">Client</h6>
-          <p className="mb-2.5">IT Tesla Solutions</p>
+          <p className="mb-2.5 text-xl">IT Tesla Solutions</p>
           <h6 className="text-silver mb-2.5">Year</h6>
           <p>2022</p>
         </div>
@@ -66,7 +66,7 @@ const TimeLine = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h5 className="font-semibold text-2xl mb-2.5 mt-6 md:mt-12 md:text-xl">
+          <h5 className="font-semibold text-2xl mb-2.5 mt-6 md:mt-12 md:text-3xl">
             The Next Stage of Evolution
           </h5>
           <span className="uppercase text-sm font-medium mb-2.5">

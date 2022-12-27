@@ -19,7 +19,7 @@
     @apply text-base font-bold my-5 leading-6 tracking-wide md:leading-relaxed md:my-10 md:text-3xl;
   }
   h6 {
-    @apply uppercase  md:text-base  leading-7  tracking-[9px] font-medium;
+    @apply md:text-base  leading-7  tracking-[9px] font-medium;
     // text-xs
   }
   a {

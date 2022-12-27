@@ -23,25 +23,25 @@ const TimeLine = () => {
           data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver ">Case Study</h6>
-          <h5 className="my-2.5">
+          <h5 className="my-2.5 text-2xl md:text-3xl">
             OPG Market-
             <span className="font-normal">
               {" "}
               Homemade farmer products store
             </span>{" "}
           </h5>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          <h6 className=" text-silver tracking-[9px] font-medium mb-2.5">
             My Role
-          </span>
-          <p>Creative Direction</p>
-          <p>Product Designer</p>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          </h6>
+          <p className="mb-1.5 text-xl">Creative Direction</p>
+          <p className="mb-2.5 text-xl">Product Designer</p>
+          <h6 className=" text-silver tracking-[9px] font-medium mb-2.5">
             Client
-          </span>
-          <p>Freelance Project </p>
-          <span className="uppercase text-sm leading-7 text-silver tracking-[9px] font-medium">
+          </h6>
+          <p className="mb-2.5 text-xl">Freelance Project </p>
+          <h6 className=" text-silver tracking-[9px] font-medium mb-2.5">
             Year
-          </span>
+          </h6>
           <p>2022</p>
         </div>
 
@@ -303,49 +303,6 @@ const TimeLine = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div
-          className="my-2.5"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <Image
-            src={laptopAndMonitor}
-            className="image"
-            alt="Laptop and Monitor"
-          />
-        </div>
-
-        <div
-          className="my-2.5"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <Image src={img4} className="image" alt="Laptop" />
-        </div>
-
-        <div
-          className="my-2.5"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <Image src={cart} className="image" alt="Home screen" />
-        </div>
-
-        <div
-          className="my-2.5"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <Image src={store} className="image" alt="Store" />
         </div>
       </div>
       <Footer />

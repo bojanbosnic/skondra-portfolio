@@ -77,7 +77,7 @@ const Testimonial = () => {
           Reviews
         </span>
         <h4
-          className="mb-9"
+          className="mb-5 md:mb-9"
           // data-aos="fade-up"
           // data-aos-delay="50"
           // data-aos-duration="1000"
@@ -88,7 +88,7 @@ const Testimonial = () => {
         <Slider ref={(c) => (slider.current = c)} {...settings}>
           {testimonialReviews.map((item) => (
             <>
-              <div className="px-10 pt-11 flex flex-col">
+              <div className="px-5 pt-6 md:px-10 md:pt-11 flex flex-col">
                 <div className="flex mb-5">
                   <AiFillStar color="#EEC01C" />
                   <AiFillStar color="#EEC01C" />
@@ -101,7 +101,7 @@ const Testimonial = () => {
                 </span>
               </div>
               <div className="flex justify-between items-center w-full absolute bottom-8">
-                <div className="flex items-center pl-10">
+                <div className="flex items-center pl-5 md:pl-10">
                   <Image
                     src={item.picture}
                     width={60}
@@ -118,7 +118,7 @@ const Testimonial = () => {
                     </span>
                   </div>
                 </div>
-                <div className="pr-12">
+                <div className="pr-6 md:pr-12">
                   <Image src={cloud} alt="cloud" />
                 </div>
               </div>
