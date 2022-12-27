@@ -7,8 +7,8 @@ $screenValue: 14.4;
 
 .close-btn {
   position: fixed;
-  right: 5rem;
-  top: 1rem;
+  right: 2rem;
+  top: 0.5rem;
   padding: 0;
   margin: 0;
 }
@@ -85,7 +85,7 @@ label {
 
   .close-btn {
     position: fixed;
-    right: 10rem;
+    right: 7.5rem;
     top: 1rem;
     padding: 0;
     margin: 0;
@@ -148,12 +148,11 @@ label {
     font-size: size(18);
     line-height: size(30);
   }
-
   .close-btn {
     position: fixed;
-    right: 15.5%;
+    right: 18rem;
+    top: 2rem;
     padding: 0;
     margin: 0;
-    margin-bottom: 1rem;
   }
 }

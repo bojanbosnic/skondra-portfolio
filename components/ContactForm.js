@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import Success from "./Success";
 
-const ContactForm = ({ setSuccess }) => {
+const ContactForm = () => {
+  const [success, setSuccess] = useState(false);
+
   const initialValue = {
     user_name: "",
     user_email: "",
@@ -20,6 +23,7 @@ const ContactForm = ({ setSuccess }) => {
     defaultValues: initialValue,
   });
   const form = useRef();
+
   const sendEmail = (formData) => {
     console.log(formData);
     emailjs
@@ -67,93 +71,109 @@ const ContactForm = ({ setSuccess }) => {
         </div>
       </div>
       {/* forma-card */}
-      <div className="w-full h-[340px] px-7 py-2.5 md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black">
-        <h5 className="hidden pt-10 lets-talk mb-2.5 mt-0 md:block">
-          Let’s Talk
-        </h5>
-        <span className="hidden mb-4 text-lg lets-talk-paragraph md:block md:text-lg">
-          Feel free to contact me at any time to talk about your awesome idea,
-          and lets turn that into an amazing product.
-        </span>
-        {/* forma */}
-        <form ref={form} onSubmit={handleSubmit(sendEmail)} className="w-full">
-          <div className="flex flex-wrap pt-2 md:pt-0 md:justify-between items-center w-full mb-1 md:mb-5 md:flex-nowrap">
-            <div className="flex flex-col mb-2 contact-form-col">
-              <label className="text mb-1 md:mb-1.5">Full Name</label>
-              <input
-                onChange={(e) =>
-                  setFields({ ...fields, user_name: e.target.value })
-                }
-                type="text"
-                className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
-                name="user_name"
-                placeholder="Marko Markovic"
-                {...register("user_name", { required: true })}
-              />
-              {/* {errors.user_name && (
-                <div className="text-red text-xs">
-                  Please fill out this field.
-                </div>
-              )} */}
-            </div>
-
-            <div className="flex contact-form-col mb-2 flex-col ">
-              <label className="text mb-1 md:mb-1.5">Email</label>
-              <input
-                type="email"
-                name="user_email"
-                className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
-                placeholder="markovic@example.com"
-                {...register("user_email", { required: true })}
-              />
-              {/* {errors.user_email && (
-                <div className="text-red text-xs">
-                  Please fill out this field.
-                </div>
-              )} */}
-            </div>
-          </div>
-
-          <div className="flex w-full flex-col mb-2 md:mb-5">
-            <label className=" mb-1 md:mb-1.5">Subject</label>
-            <input
-              className="w-full placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
-              name="user_subject"
-              type="text"
-              placeholder="Information about potencial collaboration"
-              {...register("user_subject", { required: true })}
-            />
-            {/* {errors.user_subject && (
-              <div className="text-red text-xs block">
+      <div
+        className={`${
+          success && "relative"
+        } w-full h-[340px] px-7 py-2.5 md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black`}
+      >
+        {success ? (
+          <>
+            <Success />
+          </>
+        ) : (
+          <>
+            <h5 className="hidden pt-10 lets-talk mb-2.5 mt-0 md:block">
+              Let’s Talk
+            </h5>
+            <span className="hidden mb-4 text-lg lets-talk-paragraph md:block md:text-lg">
+              Feel free to contact me at any time to talk about your awesome
+              idea, and lets turn that into an amazing product.
+            </span>
+            {/* forma */}
+            <form
+              ref={form}
+              onSubmit={handleSubmit(sendEmail)}
+              className="w-full"
+            >
+              <div className="flex flex-wrap pt-2 md:pt-0 md:justify-between items-center w-full mb-1 md:mb-5 md:flex-nowrap">
+                <div className="flex flex-col mb-2 contact-form-col">
+                  <label className="text mb-1 md:mb-1.5">Full Name</label>
+                  <input
+                    onChange={(e) =>
+                      setFields({ ...fields, user_name: e.target.value })
+                    }
+                    type="text"
+                    className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
+                    name="user_name"
+                    placeholder="Marko Markovic"
+                    {...register("user_name", { required: true })}
+                  />
+                  {/* {errors.user_name && (
+              <div className="text-red text-xs">
                 Please fill out this field.
               </div>
             )} */}
-          </div>
+                </div>
 
-          <div className="flex flex-col">
-            <label className="text mb-1 md:mb-1.5">Message</label>
-            <textarea
-              name="user_message"
-              className="text-area placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base text-area"
-              placeholder="Type some texte here..."
-              {...register("user_message", { required: true })}
-            ></textarea>
-            {/* {errors.user_message && (
-              <span className="text-red text-xs">
+                <div className="flex contact-form-col mb-2 flex-col ">
+                  <label className="text mb-1 md:mb-1.5">Email</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
+                    placeholder="markovic@example.com"
+                    {...register("user_email", { required: true })}
+                  />
+                  {/* {errors.user_email && (
+              <div className="text-red text-xs">
                 Please fill out this field.
-              </span>
+              </div>
             )} */}
-          </div>
+                </div>
+              </div>
 
-          <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
-            <button
-              type="submit"
-              className="text-xs form-btn rounded md:rounded-lg py-2 px-10 bg-black text-white md:text-base md:py-5"
-            >
-              Send <span className="hidden md:inline">Message</span>
-            </button>
-          </div>
-        </form>
+              <div className="flex w-full flex-col mb-2 md:mb-5">
+                <label className=" mb-1 md:mb-1.5">Subject</label>
+                <input
+                  className="w-full placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
+                  name="user_subject"
+                  type="text"
+                  placeholder="Information about potencial collaboration"
+                  {...register("user_subject", { required: true })}
+                />
+                {/* {errors.user_subject && (
+            <div className="text-red text-xs block">
+              Please fill out this field.
+            </div>
+          )} */}
+              </div>
+
+              <div className="flex flex-col">
+                <label className="text mb-1 md:mb-1.5">Message</label>
+                <textarea
+                  name="user_message"
+                  className="text-area placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base text-area"
+                  placeholder="Type some texte here..."
+                  {...register("user_message", { required: true })}
+                ></textarea>
+                {/* {errors.user_message && (
+            <span className="text-red text-xs">
+              Please fill out this field.
+            </span>
+          )} */}
+              </div>
+
+              <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
+                <button
+                  type="submit"
+                  className="text-xs form-btn rounded md:rounded-lg py-2 px-10 bg-black text-white md:text-base md:py-5"
+                >
+                  Send <span className="hidden md:inline">Message</span>
+                </button>
+              </div>
+            </form>
+          </>
+        )}
       </div>
     </div>
   );

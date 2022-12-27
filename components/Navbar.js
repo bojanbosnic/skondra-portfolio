@@ -5,12 +5,12 @@ import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
 import { Link } from "react-scroll";
+
 // import Link from "next/link";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
-  const [success, setSuccess] = useState(false);
 
   const toggleFun = () => setToggle(!toggle);
   return (
@@ -29,13 +29,9 @@ const Interface = () => {
           >
             {isContact ? (
               <>
-                {success ? (
-                  <h2>Success</h2>
-                ) : (
-                  <div className="container mx-auto">
-                    <ContactForm setSuccess={setSuccess} />
-                  </div>
-                )}
+                <div className="container mx-auto">
+                  <ContactForm />
+                </div>
               </>
             ) : (
               <>
@@ -75,7 +71,7 @@ const Interface = () => {
             } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-6  z-30`
           )}
           onClick={(e) => {
-            setIsContact(false), setSuccess(false), toggleFun();
+            setIsContact(false), toggleFun();
           }}
         >
           {toggle ? (
