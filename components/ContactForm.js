@@ -45,20 +45,20 @@ const ContactForm = ({ setSuccess }) => {
   return (
     <div className="flex flex-wrap md:justify-between md:flex-nowrap">
       <div className="text-xl w-full contact-card mr-0  md:w-[40%] md:mr-16">
-        <span className="block text-xl font-bold card-heading  leading-6 pt-6 md:pt-0  text-left md:text-5xl  md:leading-[78px]">
+        <span className="block text-xl font-bold card-heading mb-1.5  leading-6 pt-6 md:pt-0 md:mb-5 text-left md:text-5xl  md:leading-[78px]">
           Contact
         </span>
-        <span className="text-base max-w-[356px] leading-6 block mb-2.5">
+        <span className="text-base max-w-[356px] leading-6 md:leading-8 block mb-2.5 md:mb-5">
           I usually work on several projects but I’ll be happy to discuss new
           opportunities. <b>Let’s get in touch!</b>
         </span>
         {/* location */}
-        <div className="bg-black border max-w-[210px] md:max-w-full border-white  mb-5 md:mb-0 rounded-xl">
+        <div className="bg-black px-0 py-0 md:py-5 border max-w-[210px] md:max-w-full border-white  mb-2.5 md:mb-0 rounded-xl">
           <div className="py-4">
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
               Head Quarter
             </span>
-            <span className="block text-fadeWhite px-5 mt-2.5 text-sm md:text-2xl">
+            <span className="block text-grey text-fadeWhite px-5 mt-2.5 text-sm md:text-2xl">
               <span className="block">Banja Luka, BiH</span>
               <span className="block">Kosovke Devojke 10</span>
               <span className="block">78000</span>
@@ -85,16 +85,16 @@ const ContactForm = ({ setSuccess }) => {
                   setFields({ ...fields, user_name: e.target.value })
                 }
                 type="text"
-                className="placeholder:text-xs md:placeholder:text-base"
+                className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
                 name="user_name"
                 placeholder="Marko Markovic"
                 {...register("user_name", { required: true })}
               />
-              {errors.user_name && (
+              {/* {errors.user_name && (
                 <div className="text-red text-xs">
                   Please fill out this field.
                 </div>
-              )}
+              )} */}
             </div>
 
             <div className="flex contact-form-col mb-2 flex-col ">
@@ -102,47 +102,47 @@ const ContactForm = ({ setSuccess }) => {
               <input
                 type="email"
                 name="user_email"
-                className="placeholder:text-xs md:placeholder:text-base"
+                className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
                 placeholder="markovic@example.com"
                 {...register("user_email", { required: true })}
               />
-              {errors.user_email && (
+              {/* {errors.user_email && (
                 <div className="text-red text-xs">
                   Please fill out this field.
                 </div>
-              )}
+              )} */}
             </div>
           </div>
 
           <div className="flex w-full flex-col mb-2 md:mb-5">
-            <label className="text-base mb-1 md:mb-1.5">Subject</label>
+            <label className=" mb-1 md:mb-1.5">Subject</label>
             <input
-              className="w-full placeholder:text-xs md:placeholder:text-base"
+              className="w-full placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
               name="user_subject"
               type="text"
               placeholder="Information about potencial collaboration"
               {...register("user_subject", { required: true })}
             />
-            {errors.user_subject && (
+            {/* {errors.user_subject && (
               <div className="text-red text-xs block">
                 Please fill out this field.
               </div>
-            )}
+            )} */}
           </div>
 
           <div className="flex flex-col">
             <label className="text mb-1 md:mb-1.5">Message</label>
             <textarea
               name="user_message"
-              className="text-area placeholder:text-xs md:placeholder:text-base text-area"
+              className="text-area placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base text-area"
               placeholder="Type some texte here..."
               {...register("user_message", { required: true })}
             ></textarea>
-            {errors.user_message && (
+            {/* {errors.user_message && (
               <span className="text-red text-xs">
                 Please fill out this field.
               </span>
-            )}
+            )} */}
           </div>
 
           <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">

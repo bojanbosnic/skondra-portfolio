@@ -22,7 +22,7 @@ module.exports = {
         black: "#292826",
         white: "#FFFFFF",
         body: "#F5F5F5",
-        fadeWhite: "#ffff54",
+        grey: "#ffffff54",
         red: "#ff0000",
         silver: "#BABABA",
         fade: " rgba(255, 255, 255, 0.6)",

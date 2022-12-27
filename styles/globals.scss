@@ -33,7 +33,7 @@
   }
 
   input {
-    @apply text-black  pl-5 py-1 border-silver border border-solid rounded-lg;
+    @apply text-black pl-2.5  rounded-md  md:pl-5 py-1 border-silver border border-solid md:rounded-lg;
   }
   textarea {
     @apply text-black h-24 border-silver md:h-48 pl-5 pt-2.5 border border-solid rounded-lg;

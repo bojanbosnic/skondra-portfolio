@@ -4,8 +4,8 @@ import logo from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
-// import { Link } from "react-scroll";
-import Link from "next/link";
+import { Link } from "react-scroll";
+// import Link from "next/link";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
@@ -47,14 +47,14 @@ const Interface = () => {
                 </li>
                 <li className="mr-4">
                   <Link
-                    href="#projects"
+                    // href="#projects"
                     className="cursor-pointer"
-                    // to="projects"
-                    // spy={true}
-                    // smooth={true}
-                    // offset={0}
-                    // duration={500}
-                    // onClick={toggleFun}
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    onClick={toggleFun}
                   >
                     Projects
                   </Link>
