@@ -24,8 +24,8 @@ const Footer = () => {
               <div>
                 <Image src={logo} alt="" />
               </div>
-              <div className="mt-5 text-center max-w-sm leading-4  tracking-wider text-base font-normal md:leading-8 md:text-left">
-                <span>
+              <div className="mt-5 text-center max-w-sm   tracking-wider text-base font-normal  md:text-left">
+                <span className="leading-4 md:leading-8">
                   I usually work on several projects but I’ll be happy to
                   discuss new opportunities.
                 </span>
@@ -119,7 +119,7 @@ const Footer = () => {
                   </div>
                   <div className="my-4 md:my-8">
                     <a
-                      href="https://linkedin.com/dejanskondric"
+                      href="https://www.linkedin.com/in/dejanskondric/"
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center underline"

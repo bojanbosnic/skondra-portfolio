@@ -14,7 +14,7 @@ const PersonalProjects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        Graphics <span className="hidden md:block">and Personal Projects</span>
+        Graphics <span className="hidden md:inline">and Personal Projects</span>
       </span>
       <h4
         data-aos="fade-up"

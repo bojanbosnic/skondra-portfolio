@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "../assets/logo/logo.svg";
+import Svg from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
@@ -9,6 +9,7 @@ import { Link } from "react-scroll";
 // import Link from "next/link";
 
 const Interface = () => {
+  console.log("SVG SLIKA", Svg);
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
 
@@ -16,8 +17,15 @@ const Interface = () => {
   return (
     <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
-        <a href="/" legacyBehavior>
-          <Image src={logo} alt="Bagzi studio logo" />
+        <a href="/" className="" legacyBehavior>
+          <Image
+            src={Svg}
+            color="#fff"
+            // height={100}
+            // width={100}
+            className="w-20 h-12   md:w-full md:h-full "
+            alt="Bagzi studio logo"
+          />
         </a>
         <div className={`${styles.siteNavbar} md:w-full md:min-wi-min`}>
           <ul

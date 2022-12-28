@@ -207,12 +207,8 @@ const TimeLine = () => {
               className="mr-2.5"
             />
             <div className="ml-2.5 flex flex-1 flex-col">
-              <p className="font-semibold">
-                Way to connect to our new communities
-              </p>
-              <small>
-                Looking for exercise but has differing schedules to friends.
-              </small>
+              <p className="font-semibold">New To Communities</p>
+              <small>Way to connect to our new communities</small>
             </div>
           </div>
 
