@@ -53,7 +53,7 @@ const PersonalProjects = () => {
             <h5 class="text-base leading-4 mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               UI Shoots
             </h5>
-            <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">
               Examples so you have a better understanding of my style
             </p>
           </div>
@@ -80,7 +80,7 @@ const PersonalProjects = () => {
             <h5 class="mb-2 text-base leading-4  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Graphic Design
             </h5>
-            <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">
               Showcasing some graphic desgin as well as my personal projects
             </p>
           </div>
