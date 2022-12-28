@@ -82,14 +82,6 @@ label {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-
-  .close-btn {
-    position: fixed;
-    right: 7.5rem;
-    top: 1rem;
-    padding: 0;
-    margin: 0;
-  }
 }
 
 @media only screen and (min-width: 1441px) {
@@ -147,12 +139,5 @@ label {
   label {
     font-size: size(18);
     line-height: size(30);
-  }
-  .close-btn {
-    position: fixed;
-    right: 18rem;
-    top: 2rem;
-    padding: 0;
-    margin: 0;
   }
 }

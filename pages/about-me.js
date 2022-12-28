@@ -116,7 +116,7 @@ const About = () => {
             </span>
           </div>
         </div>
-        <div className="text-center my-9">
+        <div className="flex flex-col items-center text-center my-9">
           <h6 className="font-medium text-xs leading-3 md:leading-7 md:text-base  tracking-[9px]">
             Clients
           </h6>
@@ -124,11 +124,9 @@ const About = () => {
           <h5 className="font-medium my-1.5 md:my-2.5">
             Some of the brands I have worked with
           </h5>
-          <p>
-            <small className="font-normal text-sm leading-6 tracking-normal max-w-0 md:max-w-720 md:text-xl">
-              Over the past few years I’ve had the pleasure to work with
-              customers from various sectors on many interesting projects.
-            </small>
+          <p className="font-normal max-w-full  text-sm leading-6 tracking-normal md:max-w-[721px]  md:text-xl">
+            Over the past few years I’ve had the pleasure to work with customers
+            from various sectors on many interesting projects.
           </p>
         </div>
         <div className="flex items-center flex-wrap justify-around mb-14">
