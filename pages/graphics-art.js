@@ -4,6 +4,7 @@ import logo from "../assets/img/Logo-Mockup.jpg";
 import poster1 from "../assets/img/posters-1.jpg";
 import poster2 from "../assets/img/posters-2.jpg";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 const GraphicsArt = () => {
   return (
     <>
@@ -26,7 +27,7 @@ const GraphicsArt = () => {
         >
           Showcasing some of my personal projects
         </h5>
-        <div className="flex items-center flex-wrap md:flex-nowrap">
+        <div className="flex items-center flex-wrap mb-10 md:flex-nowrap">
           <div
             data-aos="zoom-in"
             data-aos-delay="50"
