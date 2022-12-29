@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import email from "../assets/img/email-icon.svg";
+import Link from "next/link";
 
-const Contact = () => {
+const Contact = ({ menu, setMenu }) => {
   return (
     <div className="footer-contact">
       <div className="container mx-auto">
@@ -13,14 +14,17 @@ const Contact = () => {
             </span>
           </div>
           <div>
-            <button className="flex items-center px-3.5 py-2 upppercase rounded-lg  bg-black text-white md:px-8 md:py-6">
+            <button
+              onClick={() => setMenu(true)}
+              className="flex items-center px-3.5 py-2 upppercase rounded-lg  bg-black text-white md:px-8 md:py-6"
+            >
               <Image src={email} alt="email icon" />
-              <a
+              <Link
+                href="/contact-form"
                 className="ml-2.5 text-xs md:text-base uppercase"
-                href="mailto:skondraart@gmail.com"
               >
                 Contact Me
-              </a>
+              </Link>
             </button>
           </div>
         </div>

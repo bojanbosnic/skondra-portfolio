@@ -42,7 +42,6 @@ const PersonalProjects = () => {
             <div class="overlay">
               <Link
                 href="ui-shoots"
-                target="_blank"
                 className="text text-black font-semibold text-xl"
               >
                 View
@@ -69,7 +68,6 @@ const PersonalProjects = () => {
             <div class="overlay">
               <Link
                 href="graphics-art"
-                target="_blank"
                 className="text text-black font-semibold text-xl"
               >
                 View

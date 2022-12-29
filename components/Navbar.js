@@ -8,11 +8,9 @@ import { Link } from "react-scroll";
 
 // import Link from "next/link";
 
-const Interface = () => {
-  console.log("SVG SLIKA", Svg);
+const Interface = ({ menu }) => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
-
   const toggleFun = () => setToggle(!toggle);
   return (
     <div id="home" className="container mx-auto ">

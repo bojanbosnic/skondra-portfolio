@@ -5,7 +5,6 @@ import "../styles/globals.scss";
 import "../styles/style.scss";
 import "../styles/_mixins.scss";
 import "aos/dist/aos.css";
-
 import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {

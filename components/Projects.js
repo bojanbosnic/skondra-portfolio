@@ -41,7 +41,6 @@ const Projects = () => {
         <div class="overlay">
           <Link
             href="time-line"
-            target="_blank"
             className="text text-black font-semibold text-xl"
           >
             View
@@ -68,7 +67,6 @@ const Projects = () => {
         <div class="overlay">
           <Link
             href="any-activity"
-            target="_blank"
             className="text text-black font-semibold text-xl"
           >
             View
@@ -94,7 +92,6 @@ const Projects = () => {
         <div class="overlay">
           <Link
             href="opg-marketing"
-            target="_blank"
             className="text text-black font-semibold text-xl"
           >
             View

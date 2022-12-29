@@ -13,10 +13,10 @@ import { AiOutlineDribbble, AiOutlineBehance } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 // import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ menu, setMenu }) => {
   return (
     <>
-      <Contact />
+      <Contact menu={menu} setMenu={setMenu} />
       <div className="bg-black text-white pt-10 md:pt-20">
         <div className="container mx-auto">
           <div className="w-full flex items-center flex-wrap justify-between">

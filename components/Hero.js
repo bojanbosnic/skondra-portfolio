@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import personalImg from "../assets/img/personal-picture.png";
 import Navbar from "./Navbar";
 
-const Hero = () => {
+const Hero = ({ menu }) => {
   const projects = useRef(null);
 
   const scrollToSection = (element) => {
