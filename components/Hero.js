@@ -14,6 +14,7 @@ const Hero = () => {
     <div className="container mx-auto">
       <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap">
         <div className="w-full order-2 md:order-1 md:w-3/5">
+          <div className="designer-hero"></div>
           <h1
             className=" text-primary text-center md:text-left uppercase"
             data-aos="fade-up"
