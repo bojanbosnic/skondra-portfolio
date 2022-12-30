@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import email from "../assets/img/email-icon.svg";
 import Link from "next/link";
+import { MenuContext } from "../context/menuContext";
 
-const Contact = ({ menu, setMenu }) => {
+const Contact = () => {
+  const { setMenu } = useContext(MenuContext);
   return (
     <div className="footer-contact">
       <div className="container mx-auto">
@@ -19,12 +21,9 @@ const Contact = ({ menu, setMenu }) => {
               className="flex items-center px-3.5 py-2 upppercase rounded-lg  bg-black text-white md:px-8 md:py-6"
             >
               <Image src={email} alt="email icon" />
-              <Link
-                href="/contact-form"
-                className="ml-2.5 text-xs md:text-base uppercase"
-              >
+              <span className="ml-2.5 text-xs md:text-base uppercase">
                 Contact Me
-              </Link>
+              </span>
             </button>
           </div>
         </div>

@@ -5,15 +5,15 @@ import Layout from "../components/Layout";
 import PersonalProjects from "../components/PersonalProjects";
 import Projects from "../components/Projects";
 import Testimonial from "../components/Testimonial";
+
 const Index = () => {
-  const [setMenu, menu] = useState(false);
   return (
     <Layout pageTitle="Personal Portfolio">
-      <Hero menu={menu} />
+      <Hero />
       <Projects />
       <PersonalProjects />
       <Testimonial />
-      <Footer menu={menu} setMenu={setMenu} />
+      <Footer />
     </Layout>
   );
 };

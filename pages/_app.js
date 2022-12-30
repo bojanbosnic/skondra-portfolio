@@ -5,6 +5,7 @@ import "../styles/globals.scss";
 import "../styles/style.scss";
 import "../styles/_mixins.scss";
 import "aos/dist/aos.css";
+import MenuProvider from "../context/menuContext";
 import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
@@ -15,10 +16,10 @@ function MyApp({ Component, pageProps }) {
     });
   });
   return (
-    <>
+    <MenuProvider>
       <Navbar />
       <Component {...pageProps} />
-    </>
+    </MenuProvider>
   );
 }
 

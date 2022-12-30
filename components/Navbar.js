@@ -11,7 +11,7 @@ import { MenuContext } from "../context/menuContext";
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
-  const { menu } = useContext(MenuContext);
+  const { menu, setMenu } = useContext(MenuContext);
   console.log("nabbar context", menu);
   const toggleFun = () => setToggle(!toggle);
   return (
@@ -35,7 +35,7 @@ const Interface = () => {
               }  flex p-0 items-center list-none text-white md:my-0`
             )}
           >
-            {isContact ? (
+            {isContact || menu ? (
               <>
                 <div className="container mx-auto">
                   <ContactForm />
@@ -74,15 +74,15 @@ const Interface = () => {
         </div>
         <button
           className={classNames(
-            `${toggle && styles.togglerOpen}  ${
-              isContact && "close-btn"
+            `${(toggle || menu) && styles.togglerOpen}  ${
+              (isContact || menu) && "close-btn"
             } border-3 border-white m-3 flex items-center bg-transparent cursor-pointer h-6  z-30`
           )}
           onClick={(e) => {
-            setIsContact(false), toggleFun();
+            setIsContact(false), setMenu(false), toggleFun();
           }}
         >
-          {toggle ? (
+          {toggle || menu ? (
             <span className="font-semibold uppercase z-30 text-white mr-2.5">
               Close
             </span>
