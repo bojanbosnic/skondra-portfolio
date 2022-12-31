@@ -15,22 +15,10 @@ const About = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h6
-            className="font-medium text-xs md:text-base uppercase"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
+          <h6 className="font-medium text-xs md:text-base uppercase">
             A few words about me
           </h6>
-          <h5
-            className="mt-2.5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
+          <h5 className="mt-2.5">
             I’m a 23 year old designer and artist living in Banja Luka. I pride
             myself on my eagerness and ability to learn. Over the last few
             years, I have allowed myself to delve into a design and art centric
@@ -47,8 +35,23 @@ const About = () => {
           <div className="mb-8 md:mb-12">
             <Image src={aboutMePic} alt="Dejan's picture" className="image" />
           </div>
-          <h6 className="font-medium text-xs md:text-base"> Work Experience</h6>
-          <h5 className="font-medium text-sm mt-1 md:mt-2.5 mb-9 md:text-3xl">
+          <h6
+            className="font-medium text-xs md:text-base"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            {" "}
+            Work Experience
+          </h6>
+          <h5
+            className="font-medium text-sm mt-1 md:mt-2.5 mb-9 md:text-3xl"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             I’ve been lucky enough to establish relationships with amazing
             clients from all over the world, ranging from individual clients,
             through up-and-coming startups, to multinational companies. For more
@@ -63,7 +66,13 @@ const About = () => {
             </a>
           </h5>
         </div>
-        <div className="flex items-center justify-between">
+        <div
+          className="flex items-center justify-between"
+          data-aos="fade-up"
+          data-aos-delay="55"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div>
             <span className="block text-[9px] leading-3 md:text-2xl font-semibold md:leading-9">
               Bagzi Design Studio
@@ -116,7 +125,13 @@ const About = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col items-center text-center my-9">
+        <div
+          className="flex flex-col items-center text-center my-9"
+          data-aos="fade-up"
+          data-aos-delay="60"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h6 className="font-medium text-xs leading-3 md:leading-7 md:text-base  tracking-[9px]">
             Clients
           </h6>

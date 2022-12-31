@@ -49,7 +49,7 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="text-base leading-4 mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="text-base mt-4 leading-4 mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               UI Shoots
             </h5>
             <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">
@@ -75,7 +75,7 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="mb-2 text-base leading-4  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 mt-4 text-base leading-4  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Graphic Design
             </h5>
             <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">

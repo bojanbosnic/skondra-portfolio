@@ -61,16 +61,17 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mr-10">
-                    <Link
+                    <a
                       className="cursor-pointer"
-                      to="testemonials"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={500}
+                      href="#testemonials"
+                      // to="testemonials"
+                      // spy={true}
+                      // smooth={true}
+                      // offset={0}
+                      // duration={500}
                     >
                       Testemonials
-                    </Link>
+                    </a>
                   </li>
                   <li className="mr-10">
                     <a href="mailto:skondraart@gmail.com">Contact</a>

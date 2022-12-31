@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import Link from "next/link";
 import personalImg from "../assets/img/personal-picture.png";
 
 const Hero = () => {
@@ -61,16 +62,9 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <Link
-              className="cursor-pointer"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
+            <a className="cursor-pointer" href="#projects">
               View Projects
-            </Link>{" "}
+            </a>{" "}
             <span className="font-medium mx-2.5  text-silver md:mx-7">or</span>{" "}
             <a href="about-me">Read About Me</a>
           </h3>

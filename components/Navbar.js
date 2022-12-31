@@ -4,9 +4,9 @@ import Svg from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { MenuContext } from "../context/menuContext";
-// import Link from "next/link";
+import Link from "next/link";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +17,7 @@ const Interface = () => {
   return (
     <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
-        <a href="/" className="" legacyBehavior>
+        <a href="/">
           <Image
             src={Svg}
             color="#fff"
@@ -51,22 +51,17 @@ const Interface = () => {
                 </li>
                 <li className="mr-4">
                   <Link
-                    // href="#projects"
+                    href="/#projects"
                     className="cursor-pointer"
-                    to="/new-page.html#projects"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    onClick={toggleFun}
+                    legacyBehavior
                   >
-                    Projects
+                    <a onClick={toggleFun}>Projects</a>
                   </Link>
                 </li>
                 <li className="mr-4">
-                  <a href="/" onClick={toggleFun} className="cursor-pointer">
+                  <Link href="/" onClick={toggleFun} className="cursor-pointer">
                     Home
-                  </a>
+                  </Link>
                 </li>
               </>
             )}
