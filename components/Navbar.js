@@ -53,7 +53,7 @@ const Interface = () => {
                   <Link
                     // href="#projects"
                     className="cursor-pointer"
-                    to="projects"
+                    to="/new-page.html#projects"
                     spy={true}
                     smooth={true}
                     offset={0}

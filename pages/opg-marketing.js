@@ -304,6 +304,49 @@ const TimeLine = () => {
             </ul>
           </div>
         </div>
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <Image
+            src={laptopAndMonitor}
+            className="image"
+            alt="Laptop and Monitor"
+          />
+        </div>
+
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <Image src={img4} className="image" alt="Laptop" />
+        </div>
+
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <Image src={cart} className="image" alt="Home screen" />
+        </div>
+
+        <div
+          className="my-2.5"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <Image src={store} className="image" alt="Store" />
+        </div>
       </div>
       <Footer />
     </>
