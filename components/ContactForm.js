@@ -52,12 +52,12 @@ const ContactForm = () => {
         <span className="block text-xl font-bold card-heading mb-1.5  leading-6 pt-6 md:pt-0 md:mb-5 text-left md:text-5xl  md:leading-[78px]">
           Contact
         </span>
-        <span className="text-base max-w-[356px] leading-6 md:leading-8 block mb-2.5 md:mb-5">
+        <span className="text-base max-w-[356px] leading-6 md:leading-8 block mb-4 md:mb-5">
           I usually work on several projects but I’ll be happy to discuss new
           opportunities. <b>Let’s get in touch!</b>
         </span>
         {/* location */}
-        <div className="bg-black px-0 py-0 md:py-5 border max-w-[210px] md:max-w-full border-white  mb-2.5 md:mb-0 rounded-xl">
+        <div className="bg-black px-0 py-0 md:py-5 border max-w-[210px] md:max-w-full border-white  mb-4 md:mb-0 rounded-xl">
           <div className="py-4">
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
               Head Quarter

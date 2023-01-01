@@ -14,10 +14,10 @@ const TimeLine = () => {
       <div className="container mx-auto">
         <div
           className="col-1 float-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="text-2xl md:text-3xl my-2.5">
@@ -45,10 +45,10 @@ const TimeLine = () => {
           <Image src={timeline} alt="timeline logo" />
           <p
             className="mt-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             Event attendance tracking is an important source of data for
             organizations, no matter your industry. Attendance tracking data can
@@ -61,10 +61,10 @@ const TimeLine = () => {
 
         <div
           className="w-full col-2 float-right clear-right"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h5 className="leading-snug mt-7 mb-2.5 md:mt-5 text-3xl">
             Project Goal
@@ -82,10 +82,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-2.5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">
               Understanding The Effectiveness of Your Marketing
@@ -102,10 +102,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-2.5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">
               Meeting (or Exceeding) Attendance Requirements
@@ -119,10 +119,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-2.5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">
               Ensuring Safety and Security Strategies are Successful
@@ -137,10 +137,10 @@ const TimeLine = () => {
 
         <div
           className="col-1 float-left mb-11"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Market</h5>
           <div className="my-1.5 md:my-2.5">
@@ -177,17 +177,15 @@ const TimeLine = () => {
           </p>
         </div>
 
-        <div
-          className="my-2.5"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div className="my-2.5">
           <Image
             src={timelineDiagram}
             className="image"
             alt="Time line CMS Home Page"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           />
         </div>
         <div

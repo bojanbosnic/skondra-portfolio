@@ -21,10 +21,10 @@ const TimeLine = () => {
       <div className="container mx-auto">
         <div
           className="col-1-2 float-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="text-2xl md:text-3xl my-2.5">
@@ -42,10 +42,10 @@ const TimeLine = () => {
 
         <div
           className="col-2-2 float-right mt-7 md:mt-0"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <Image src={asset1} alt="any acitivity logo" />
           <p className="mt-5">
@@ -61,10 +61,10 @@ const TimeLine = () => {
 
         <div
           className="w-full col-2-2 float-right clear-right"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h5 className="font-semibold text-2xl mb-2.5 mt-6 md:mt-12 md:text-3xl">
             The Next Stage of Evolution
@@ -81,10 +81,10 @@ const TimeLine = () => {
           </p>
           <div
             className="my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-bold uppercase"> Create Experiences</p>
             <p>
@@ -95,10 +95,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-bold uppercase">Seamlessly Connect</p>
             <p>
@@ -109,10 +109,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-bold uppercase">Participate</p>
             <p>
@@ -124,10 +124,10 @@ const TimeLine = () => {
 
         <div
           className="col-1-2 float-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
             Targeted Audiance
@@ -144,10 +144,10 @@ const TimeLine = () => {
 
           <div
             className="flex items-center my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={retirees} alt="Retirees" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
@@ -160,10 +160,10 @@ const TimeLine = () => {
 
           <div
             className="flex items-center my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={corporates} alt="Corporates" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
@@ -196,10 +196,10 @@ const TimeLine = () => {
 
           <div
             className="flex items-center my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image
               src={newToCommuntities}
@@ -214,10 +214,10 @@ const TimeLine = () => {
 
           <div
             className="flex items-center my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={families} alt="families" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
@@ -231,10 +231,10 @@ const TimeLine = () => {
 
         <h5
           className="w-full col-1-2 float-left mt-10 mb-5 clear-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           The Next Stage of Evolution
         </h5>
@@ -243,10 +243,10 @@ const TimeLine = () => {
           <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
             <div
               className="mb-1.5 w-full  max-w mr-16"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               <p className="font-bold">Create</p>
               <ul className="list-disc pl-8">
@@ -266,10 +266,10 @@ const TimeLine = () => {
 
             <div
               className="mb-1.5 w-full max-w"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               <p className="font-bold">Search </p>
               <ul className="list-disc pl-8">
