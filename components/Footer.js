@@ -152,7 +152,7 @@ const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="flex justify-center pb-2.5 mt-6 md:pb-16">
+          <div className="flex justify-center pb-4 mt-6 md:pb-16">
             <span className="font-normal text-xs tracking-wider leading-3 md:text-base text-fade">
               Developed by ©
               <a

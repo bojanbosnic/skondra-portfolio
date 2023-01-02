@@ -1,16 +1,48 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Slider from "react-slick";
 import aboutMePic from "../assets/img/about-me.png";
 import digivox from "../assets/img/digivox.png";
-import digivoxSm from "../assets/img/digivox-sm.png";
 import njuko from "../assets/img/njuko.png";
 import eye from "../assets/img/eye.png";
 import itt from "../assets/img/itt.png";
 import onetime from "../assets/img/onetime.png";
+import { testimonialReviews } from "../datas";
 import run4reef from "../assets/img/run4reef.png";
+import Testemonial from "../components/Testimonial";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const About = () => {
+  const imgs = [
+    njuko.src,
+    eye.src,
+    itt.src,
+    onetime.src,
+    run4reef.src,
+    digivox.src,
+  ];
+  console.log(
+    "Img about me",
+    imgs.map((itemi) => <Image src={itemi} />)
+  );
+  let slider = useRef();
+  const next = () => {
+    slider.current.slickNext();
+  };
+  const previous = () => {
+    slider.current.slickPrev();
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+  };
+
   return (
     <>
       <div className="container mx-auto">
@@ -144,7 +176,7 @@ const About = () => {
             from various sectors on many interesting projects.
           </p>
         </div>
-        <div className="flex items-center flex-wrap justify-around mb-14">
+        <div className="hidden md:flex items-center flex-wrap justify-around mb-14">
           <div>
             <Image src={digivox} alt="" className="clients-imgs" />
           </div>
@@ -162,6 +194,36 @@ const About = () => {
           </div>
           <div>
             <Image src={run4reef} alt="" className="clients-imgs" />
+          </div>
+        </div>
+        <div className="block md:hidden mb-28 ">
+          <Slider ref={(c) => (slider.current = c)} {...settings}>
+            {imgs.map((item) => (
+              <>
+                <div className="px-5 pt-6 md:px-10 md:pt-11 flex flex-col"></div>
+                <div className="flex justify-center items-center w-full absolute inset-y-1/3">
+                  <div>
+                    <Image
+                      src={item}
+                      width={100}
+                      height={100}
+                      className="image"
+                      alt="user picture"
+                    />
+                  </div>
+                </div>
+              </>
+            ))}
+          </Slider>
+          <div className="absolute right-8 mt-4">
+            <button className="mr-2.5" onClick={previous}>
+              {" "}
+              <BsArrowLeft fontSize="1.5rem" />{" "}
+            </button>
+            <button onClick={next}>
+              {" "}
+              <BsArrowRight fontSize="1.5rem" />{" "}
+            </button>
           </div>
         </div>
       </div>
