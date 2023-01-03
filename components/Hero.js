@@ -13,9 +13,9 @@ const Hero = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap">
+      <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap ">
         <div className="w-full order-2 md:order-1 md:w-3/5">
-          <div className="designer-hero"></div>
+          <div className="big-text big-text-1 order-1 md:order-2"></div>
           <h1
             className=" text-primary text-center md:text-left uppercase"
             data-aos="fade-up"
@@ -70,7 +70,7 @@ const Hero = () => {
           </h3>
         </div>
         <div
-          className="w-full flex justify-center order-1  md:order-2 md:w-2/5"
+          className="w-full flex justify-center   md:order-2 md:w-2/5 order-2"
           data-aos="fade-left"
           data-aos-delay="50"
           data-aos-duration="1000"

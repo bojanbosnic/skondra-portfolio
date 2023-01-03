@@ -205,8 +205,8 @@ const About = () => {
                   <div>
                     <Image
                       src={item}
-                      width={100}
-                      height={100}
+                      width={50}
+                      height={50}
                       className="image"
                       alt="user picture"
                     />
