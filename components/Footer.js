@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import logo from "../assets/logo/logo-white.svg";
 import phone from "../assets/img/1.svg";
@@ -7,6 +7,8 @@ import behance from "../assets/img/3.svg";
 import linkedin from "../assets/img/4.svg";
 import dribble from "../assets/img/5.svg";
 import Contact from "./Contact";
+import { MenuContext } from "../context/menuContext";
+
 import { Link } from "react-scroll";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineDribbble, AiOutlineBehance } from "react-icons/ai";
@@ -14,6 +16,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 // import Link from "next/link";
 
 const Footer = () => {
+  const { setMenu } = useContext(MenuContext);
+
   return (
     <>
       <Contact />
@@ -73,8 +77,11 @@ const Footer = () => {
                       Testemonials
                     </a>
                   </li>
-                  <li className="mr-10">
-                    <a href="mailto:skondraart@gmail.com">Contact</a>
+                  <li
+                    onClick={() => setMenu(true)}
+                    className="mr-10 cursor-pointer"
+                  >
+                    Contact
                   </li>
                 </ul>
               </nav>

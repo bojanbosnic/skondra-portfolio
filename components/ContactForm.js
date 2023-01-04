@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Success from "./Success";
 
 const ContactForm = () => {
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
 
   const initialValue = {
     user_name: "",
@@ -54,7 +54,7 @@ const ContactForm = () => {
         </span>
         <span className="text-base max-w-[356px] leading-6 md:leading-8 block mb-4 md:mb-5">
           I usually work on several projects but I’ll be happy to discuss new
-          opportunities. <b>Let’s get in touch!</b>
+          opportunities. <b className="block">Let’s get in touch!</b>
         </span>
         {/* location */}
         <div className="bg-black px-0 py-0 md:py-5 border max-w-[210px] md:max-w-full border-white  mb-4 md:mb-0 rounded-xl">
