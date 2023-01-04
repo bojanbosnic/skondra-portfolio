@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Success from "./Success";
 
 const ContactForm = () => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   const initialValue = {
     user_name: "",
@@ -71,10 +71,13 @@ const ContactForm = () => {
         </div>
       </div>
       {/* forma-card */}
+
       <div
         className={`${
-          success && "relative"
-        } w-full h-[340px] px-7 py-2.5 md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black`}
+          success
+            ? "relative flex items-center justify-center  md:px-7 md:py-2.5"
+            : "px-7 py-2.5"
+        } w-full h-[340px] md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black`}
       >
         {success ? (
           <>

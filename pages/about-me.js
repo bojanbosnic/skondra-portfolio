@@ -176,24 +176,29 @@ const About = () => {
             from various sectors on many interesting projects.
           </p>
         </div>
-        <div className="hidden md:flex items-center flex-wrap justify-around mb-14">
-          <div>
-            <Image src={digivox} alt="" className="clients-imgs" />
+        <div className="hidden md:flex items-center flex-wrap justify-center mb-14">
+          <div className="flex">
+            <div className="mr-6">
+              <Image src={digivox} alt="" className="clients-imgs" />
+            </div>
+            <div className="mr-6">
+              <Image src={njuko} alt="" className="clients-imgs" />
+            </div>
+            <div className="mr-6">
+              <Image src={eye} alt="" className="clients-imgs" />
+            </div>
           </div>
-          <div>
-            <Image src={njuko} alt="" className="clients-imgs" />
-          </div>
-          <div>
-            <Image src={eye} alt="" className="clients-imgs" />
-          </div>
-          <div>
-            <Image src={itt} alt="" className="clients-imgs" />
-          </div>
-          <div>
-            <Image src={onetime} alt="" className="clients-imgs" />
-          </div>
-          <div>
-            <Image src={run4reef} alt="" className="clients-imgs" />
+
+          <div className="flex ml-1 mt-0 md:mt-8 lg:mt-8 xl:mt-0">
+            <div className="mr-6">
+              <Image src={itt} alt="" className="clients-imgs" />
+            </div>
+            <div className="mr-6">
+              <Image src={onetime} alt="" className="clients-imgs" />
+            </div>
+            <div className="mr-6">
+              <Image src={run4reef} alt="" className="clients-imgs" />
+            </div>
           </div>
         </div>
         <div className="block md:hidden mb-28 ">

@@ -4,8 +4,11 @@ import group from "../assets/img/Group.png";
 const Success = () => {
   return (
     <div className="">
+      <div></div>
       <Image src={group} alt="" />
-      <span className="block text-4xl leading-normal">Message Sent</span>
+      <span className="block text-lg md:text-4xl text-center mt-4 leading-normal">
+        Message Sent
+      </span>
     </div>
   );
 };
