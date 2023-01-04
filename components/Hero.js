@@ -15,7 +15,7 @@ const Hero = () => {
     <div className="container mx-auto">
       <div className="big-text order-1 md:order-2 relative"></div>
       <div className="w-full flex mb-7 flex-wrap md:items-center md:flex-nowrap">
-        <div className="w-full order-2 md:order-1 md:w-3/5 ">
+        <div className="w-full pt-0 md:pt-20 order-3 md:order-1 md:w-3/5 ">
           <h1
             className=" text-primary text-center md:text-left uppercase"
             data-aos="fade-up"
@@ -70,7 +70,7 @@ const Hero = () => {
           </h3>
         </div>
         <div
-          className="w-full flex justify-center   md:order-2 md:w-2/5 order-2"
+          className="w-full flex justify-center order-2   md:order-2 md:w-2/5 "
           data-aos="fade-left"
           data-aos-delay="50"
           data-aos-duration="1000"
