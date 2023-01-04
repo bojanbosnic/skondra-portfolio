@@ -23,7 +23,7 @@ const Interface = () => {
             color="#fff"
             // height={100}
             // width={100}
-            className="w-20 h-12   md:w-full md:h-full "
+            className=""
             alt="Bagzi studio logo"
           />
         </a>
