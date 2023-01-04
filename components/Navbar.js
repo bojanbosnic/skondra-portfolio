@@ -18,14 +18,7 @@ const Interface = () => {
     <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
         <a href="/">
-          <Image
-            src={Svg}
-            color="#fff"
-            // height={100}
-            // width={100}
-            className=""
-            alt="Bagzi studio logo"
-          />
+          <Image src={Svg} color="#fff" className="" alt="Bagzi studio logo" />
         </a>
         <div className={`${styles.siteNavbar} md:w-full md:min-wi-min`}>
           <ul
