@@ -17,10 +17,10 @@ const TimeLine = () => {
       <div className="container mx-auto">
         <div
           className="col-1-2 float-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <h6 className="text-silver ">Case Study</h6>
           <h5 className="my-2.5 text-2xl md:text-3xl">
@@ -47,10 +47,10 @@ const TimeLine = () => {
 
         <div
           className="col-2-2 float-right mt-7 md:mt-0"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <Image src={ekoKorpa} alt="any acitivity logo" />
           <p className="mt-5">
@@ -66,19 +66,19 @@ const TimeLine = () => {
         <div className="w-full col-2-2 float-right clear-right">
           <h5
             className="font-semibold mb-2.5 mt-6 md:mt-12"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             My Contribution
           </h5>
           <p
             className="my-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             In colaboration with PM’s and PO’s we identified the problem, did
             user research / testing, UI Design, and facilltated the design hand
@@ -88,17 +88,17 @@ const TimeLine = () => {
           </p>
           <div
             className="my-2.5 md:my-10"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">Challenge</p>
             <p
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
             >
               Design an Web app that will help farmers sell their produce
               directly to consumers and help buyers easily locate the products
@@ -108,10 +108,10 @@ const TimeLine = () => {
           </div>
           <div
             className="my-2.5 md:my-10"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">User Research</p>
             <p>
@@ -127,10 +127,10 @@ const TimeLine = () => {
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
           >
             <p>
               <b>Q.</b> What goes into process of sourcing a market for your
@@ -168,10 +168,10 @@ const TimeLine = () => {
 
         <div
           className="col-1-2 float-left"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          // data-aos="fade-up"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
         >
           <div className="my-10 mt-8">
             <p className="font-semibold">Market Research</p>
@@ -190,19 +190,19 @@ const TimeLine = () => {
           <div className="my-2.5 md:my-10">
             <p
               className="font-semibold"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               Questions for myself to answer
             </p>
             <ul
               className="list-disc text-xl pl-8 li-activity"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
             >
               <li>
                 How might we enable the farmers to directly reach customers?
@@ -220,10 +220,10 @@ const TimeLine = () => {
 
           <div
             className="my-2.5 md:my-10"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <p className="font-semibold">My Findings</p>
             <p>
@@ -251,10 +251,10 @@ const TimeLine = () => {
         <div className="w-full flex flex-wrap justify-center mb-10  md:justify-between md:mb-20 md:flex-nowrap">
           <div
             className="col-opg-marketing mb-7 md:mb-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={image2} alt="eMerkato logo" className="w-full" />
             <ul className="list-disc text-xl pl-8 li-activity mt-5">
@@ -269,10 +269,10 @@ const TimeLine = () => {
           </div>
           <div
             className="col-opg-marketing mb-7 md:mb-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={image3} alt="Finoteka logo" />
             <ul className="list-disc text-xl pl-8 li-activity mt-5">
@@ -284,10 +284,10 @@ const TimeLine = () => {
           </div>
           <div
             className="col-opg-marketing mb-7 md:mb-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
           >
             <Image src={image4} alt="Webi.hr logo" />
             <ul className="list-disc text-xl pl-8 li-activity mt-5">
