@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Success from "./Success";
 
 const ContactForm = () => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   const initialValue = {
     user_name: "",

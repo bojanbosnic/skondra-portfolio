@@ -49,15 +49,14 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="text-base mt-4 leading-4 mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="text-base mt-4 leading-4 mb-2 md:text-2xl font-bold tracking-tight text-black dark:text-white">
               UI Shoots
             </h5>
-            <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-black md:text-base dark:text-gray-400">
               Examples so you have a better understanding of my style
             </p>
           </div>
         </div>
-
         <div class="w-full rounded-2xl overflow-hidden bg-white border-transparent md:w-1/2">
           <div className="overlay-container">
             <Image
@@ -75,10 +74,10 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="p-5">
-            <h5 class="mb-2 mt-4 text-base leading-4  md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class="mb-2 mt-4 text-base leading-4  md:text-2xl font-bold tracking-tight text-black dark:text-white">
               Graphic Design
             </h5>
-            <p class="mb-3 text-xs font-normal text-gray-700 md:text-base dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-black md:text-base dark:text-gray-400">
               Showcasing some graphic desgin as well as my personal projects
             </p>
           </div>

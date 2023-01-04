@@ -69,6 +69,7 @@ const Testimonial = () => {
     <div id="testemonials" className="container mx-auto">
       <div className="mb-28 relative">
         <span
+          className="text-sm tracking-[9px] md:leading-7 font-medium"
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1000"

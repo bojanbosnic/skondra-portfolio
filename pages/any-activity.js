@@ -240,7 +240,7 @@ const TimeLine = () => {
         </h5>
 
         <div className="w-full md:grid-cols-1 mb-10  md:mb-20 ">
-          <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
+          <div className="w-full flex flex-wrap justify-between md:flex-nowrap">
             <div
               className="mb-1.5 w-full  max-w mr-16"
               // data-aos="fade-up"
