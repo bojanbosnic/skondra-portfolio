@@ -70,7 +70,7 @@ const Hero = () => {
           </h3>
         </div>
         <div
-          className="w-full flex justify-center order-2   md:order-2 md:w-2/5 "
+          className="w-full flex justify-center pt-4 order-2 md:pt-0  md:order-2 md:w-2/5 "
           data-aos="fade-left"
           data-aos-delay="50"
           data-aos-duration="1000"
