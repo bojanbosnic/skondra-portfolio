@@ -58,7 +58,7 @@ const TimeLine = () => {
             isolationism.
           </p>
         </div>
-
+        {/* prvi */}
         <div
           className="w-full col-2-2 float-right clear-right"
           // data-aos="fade-up"
@@ -121,7 +121,7 @@ const TimeLine = () => {
             </p>
           </div>
         </div>
-
+        {/* drugif */}
         <div
           className="col-1-2 float-left"
           // data-aos="fade-up"
@@ -228,26 +228,15 @@ const TimeLine = () => {
             </div>
           </div>
         </div>
-
-        <h5
-          className="w-full col-1-2 float-left mt-10 mb-5 clear-left"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        {/* POCINJE-------------------------------------------------------------------------------------- */}
+        <h5 className="w-full col-1-2 float-left mt-10 mb-5 clear-left">
           The Next Stage of Evolution
         </h5>
+        {/* className="w-full col-2-2 float-right clear-right" */}
 
-        <div className="w-full md:grid-cols-1 mb-10  md:mb-20 ">
-          <div className="w-full flex flex-wrap justify-between md:flex-nowrap">
-            <div
-              className="mb-1.5 w-full  max-w mr-16"
-              // data-aos="fade-up"
-              // data-aos-delay="50"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-            >
+        <div className="w-full mb-10  md:mb-20 ">
+          <div className="w-full ">
+            <div className="mb-1.5 w-full float-left col-1-2 clear-left  max-w ">
               <p className="font-bold">Create</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -263,14 +252,7 @@ const TimeLine = () => {
                 </li>
               </ul>
             </div>
-
-            <div
-              className="mb-1.5 w-full max-w"
-              // data-aos="fade-up"
-              // data-aos-delay="50"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-            >
+            <div className="mb-1.5  col-2-2  float-right clear-right">
               <p className="font-bold">Search </p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -286,14 +268,8 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-wrap justify-between md:flex-nowrap md:col-1-3">
-            <div
-              className="w-full mb-1.5 max-w mr-16"
-              // data-aos="fade-up"
-              // data-aos-delay="50"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-            >
+          <div className="w-full">
+            <div className="w-full mb-0 md:mb-16  float-left col-1-2 clear-left  max-w ">
               <p className="font-bold">Suggested</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -306,13 +282,7 @@ const TimeLine = () => {
                 </li>
               </ul>
             </div>
-            <div
-              className="w-full max-w"
-              // data-aos="fade-up"
-              // data-aos-delay="50"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-            >
+            <div className="w-full mb-8 md:mb-0 col-2-2  float-right clear-right">
               <p className="font-bold">Profile</p>
               <ul className="list-disc pl-8">
                 <li className="li-activity">
@@ -331,8 +301,10 @@ const TimeLine = () => {
           </div>
         </div>
 
+        {/* kraj------------------------- */}
+
         <div
-          className="my-2.5"
+          className="mb-2.5 "
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1000"

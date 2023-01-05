@@ -51,9 +51,9 @@ const About = () => {
             A few words about me
           </h6>
           <h5 className="mt-2.5">
-            I’m a 23 year old designer and artist living in Banja Luka. I pride
-            myself on my eagerness and ability to learn. Over the last few
-            years, I have allowed myself to delve into a design and art centric
+            Experienced Designer and Artist living in Banja Luka. I pride myself
+            on my eagerness and ability to learn. Over the last few years, I
+            have allowed myself to delve into a design and art centric
             lifestyle. Due to my attention to detail, I am constantly absorbing
             ideas from everyday life. I am very passionate about my work and
             driven to satisfy my clients.

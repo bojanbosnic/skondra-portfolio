@@ -26,13 +26,13 @@ const Hero = () => {
             Dejan Skondric
           </h1>
           <span
-            className="block text-xl text-center font-normal leading-9  md:text-left md:text-5xl md:leading-[78px]"
+            className="block text-xl text-center font-normal leading-9  md:text-left md:text-5xl md:leading-[60px]"
             data-aos="fade-up"
             data-aos-delay="52"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            Hi there, I’m a Freelance
+            Hi there, I’m a Freelance Product Designer
           </span>
           <span
             className="block text-4xl leading-9 text-center font-extrabold md:text-left md:text-7xl md:leading-[78px]"
@@ -51,9 +51,9 @@ const Hero = () => {
             data-aos-easing="ease-in-out"
           >
             I help companies to design digital products and turn ideas into a
-            functioanl and delightfull experience. I’m focusing on working on
-            interface and digital design - mainly building products, branding
-            and websites.
+            functional and delightful experiences. I’m focusing on working on
+            the interface and digital design - mainly building products,
+            branding, and websites.
           </h2>
           <h3
             className="my-5 text-center md:text-left"
