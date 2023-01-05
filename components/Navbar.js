@@ -12,8 +12,14 @@ const Interface = () => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
   const { menu, setMenu } = useContext(MenuContext);
-  console.log("nabbar context", menu);
-  const toggleFun = () => setToggle(!toggle);
+  console.log("toggle", toggle);
+  const toggleFun = () => {
+    if (menu) {
+      setToggle(false);
+    } else {
+      setToggle(!toggle);
+    }
+  };
   return (
     <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
