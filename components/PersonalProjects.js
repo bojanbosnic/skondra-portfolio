@@ -49,10 +49,10 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="px-5 pb-2">
-            <h5 class="text-base mt-4 leading-4 mb-2 md:text-2xl font-bold tracking-tight text-black dark:text-white">
+            <h5 class="text-base mt-4 leading-4 mb-2 md:text-2xl font-bold tracking-tight text-black ">
               UI Shoots
             </h5>
-            <p class="mb-3 text-xs font-normal text-black md:text-base dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-black md:text-base ">
               Examples so you have a better understanding of my style
             </p>
           </div>
@@ -74,10 +74,10 @@ const PersonalProjects = () => {
             </div>
           </div>
           <div class="px-5 pb-2">
-            <h5 class="mb-2 mt-4 text-base leading-4  md:text-2xl font-bold tracking-tight text-black dark:text-white">
+            <h5 class="mb-2 mt-4 text-base leading-4  md:text-2xl font-bold tracking-tight text-black ">
               Graphic Design
             </h5>
-            <p class="mb-3 text-xs font-normal text-black md:text-base dark:text-gray-400">
+            <p class="mb-3 text-xs font-normal text-black md:text-base ">
               Showcasing some graphic desgin as well as my personal projects
             </p>
           </div>
