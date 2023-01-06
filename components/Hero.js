@@ -26,13 +26,13 @@ const Hero = () => {
             Dejan Skondric
           </h1>
           <span
-            className="block text-xl text-center font-normal leading-9  md:text-left md:text-5xl md:leading-[60px]"
+            className="block text-xl text-center font-normal leading-9  md:text-left md:text-5xl md:leading-[78px]"
             data-aos="fade-up"
             data-aos-delay="52"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            Hi there, I’m a Freelance Product Designer
+            Hi there, I’m a Freelance
           </span>
           <span
             className="block text-4xl leading-9 text-center font-extrabold md:text-left md:text-7xl md:leading-[78px]"

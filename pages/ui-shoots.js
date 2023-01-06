@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import simple from "../assets/img/ui-shoots/03.00-TimeLine- Simple Stat Charts-Detailed Click.jpg";
 import loginScreen from "../assets/img/ui-shoots/Login Screen.jpg";
 import italySite from "../assets/img/ui-shoots/Group 21720.jpg";
 import employerDashboard from "../assets/img/ui-shoots/02.00 Employer Dashboard.jpg";
 import openRace from "../assets/img/ui-shoots/04.00-Open Event-Race-Timing Location.jpg";
 import events from "../assets/img/ui-shoots/Events.jpg";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 const UiShoots = () => {
   return (
@@ -46,7 +46,20 @@ const UiShoots = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <Image src={loginScreen} className="image" alt="login screeen" />
+          <Image
+            src={simple}
+            className="image"
+            alt="Simple Stat Charts-Detailed"
+          />
+        </div>
+        <div
+          className="my-10"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <Image src={italySite} className="image" alt="Italy site" />
         </div>
         <div
           className="my-10"
@@ -61,6 +74,7 @@ const UiShoots = () => {
             alt="employerDashboard"
           />
         </div>
+
         <div
           className="my-10"
           data-aos="fade-up"
@@ -77,7 +91,7 @@ const UiShoots = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <Image src={italySite} className="image" alt="Italy site" />
+          <Image src={loginScreen} className="image" alt="login screeen" />
         </div>
       </div>
       <Footer />
