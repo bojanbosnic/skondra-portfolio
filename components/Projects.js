@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Link from "next/link";
 import pic1 from "../assets/img/slika.png";
 import pic2 from "../assets/img/slika2.png";
@@ -6,8 +6,6 @@ import pic3 from "../assets/img/slika3.png";
 import Image from "next/image";
 
 const Projects = () => {
-  const projects = useRef(null);
-
   return (
     <div id="projects" className="container mx-auto mb-14">
       <div

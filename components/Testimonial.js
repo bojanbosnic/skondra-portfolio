@@ -54,14 +54,6 @@ const Testimonial = () => {
           initialSlide: 1,
         },
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     initialSlide: 1,
-      //   },
-      // },
     ],
   };
 
@@ -77,15 +69,7 @@ const Testimonial = () => {
         >
           Reviews
         </span>
-        <h4
-          className="mb-5 md:mb-9"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
-          Testemonials
-        </h4>
+        <h4 className="mb-5 md:mb-9">Testemonials</h4>
         <Slider ref={(c) => (slider.current = c)} {...settings}>
           {testimonialReviews.map((item) => (
             <>

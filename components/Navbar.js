@@ -1,18 +1,17 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Svg from "../assets/logo/logo.svg";
 import styles from "../styles/Home.module.scss";
 import classNames from "classnames";
 import ContactForm from "./ContactForm";
-// import { Link } from "react-scroll";
 import { MenuContext } from "../context/menuContext";
-import Link from "next/link";
 
 const Interface = () => {
   const [toggle, setToggle] = useState(false);
   const [isContact, setIsContact] = useState(false);
   const { menu, setMenu } = useContext(MenuContext);
-  console.log("toggle", toggle);
+
   const toggleFun = () => {
     if (menu) {
       setToggle(false);

@@ -8,17 +8,12 @@ import timelineDiagram from "../assets/img/timeline-diagram.png";
 import addTags from "../assets/img/Add-Tags.png";
 import laptop1 from "../assets/img/laptop-screen1.png";
 import laptop2 from "../assets/img/laptop-screen2.png";
+
 const TimeLine = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div
-          className="col-1 float-left"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="col-1 float-left">
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="text-2xl md:text-3xl my-2.5">
             TimeLine -
@@ -43,13 +38,7 @@ const TimeLine = () => {
 
         <div className="col-2 float-right">
           <Image src={timeline} alt="timeline logo" />
-          <p
-            className="mt-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <p className="mt-5">
             Event attendance tracking is an important source of data for
             organizations, no matter your industry. Attendance tracking data can
             be turned into actionable insights that improve your approach to
@@ -80,13 +69,7 @@ const TimeLine = () => {
               engagement goals
             </p>
           </div>
-          <div
-            className="my-2.5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-2.5">
             <p className="font-semibold">
               Understanding The Effectiveness of Your Marketing
             </p>
@@ -100,13 +83,7 @@ const TimeLine = () => {
               communication tactics and strategies.
             </p>
           </div>
-          <div
-            className="my-2.5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-2.5">
             <p className="font-semibold">
               Meeting (or Exceeding) Attendance Requirements
             </p>
@@ -117,13 +94,7 @@ const TimeLine = () => {
               proof.
             </p>
           </div>
-          <div
-            className="my-2.5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-2.5">
             <p className="font-semibold">
               Ensuring Safety and Security Strategies are Successful
             </p>
@@ -135,13 +106,7 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <div
-          className="col-1 float-left mb-11"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="col-1 float-left mb-11">
           <h5 className="leading-snug mb-2.5 mt-7 text-3xl">Market</h5>
           <div className="my-1.5 md:my-2.5">
             <p className="font-semibold">Event Organizers </p>

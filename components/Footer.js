@@ -13,7 +13,6 @@ import { Link } from "react-scroll";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineDribbble, AiOutlineBehance } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-// import Link from "next/link";
 
 const Footer = () => {
   const { setMenu } = useContext(MenuContext);
@@ -65,15 +64,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mr-10">
-                    <a
-                      className="cursor-pointer"
-                      href="#testemonials"
-                      // to="testemonials"
-                      // spy={true}
-                      // smooth={true}
-                      // offset={0}
-                      // duration={500}
-                    >
+                    <a className="cursor-pointer" href="#testemonials">
                       Testemonials
                     </a>
                   </li>

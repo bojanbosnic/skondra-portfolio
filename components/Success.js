@@ -4,7 +4,7 @@ import group from "../assets/img/Group.png";
 const Success = () => {
   return (
     <div className="">
-      <Image src={group} alt="" className="" />
+      <Image src={group} alt="succes people group" className="" />
       <span className="block text-lg md:text-4xl text-center mt-4 leading-normal">
         Message Sent
       </span>

@@ -10,8 +10,6 @@ const MenuProvider = ({ children }) => {
     setMenu,
   };
 
-  console.log("INFO FROM CONTEXT", menu);
-
   return <MenuContext.Provider value={value}>{children}</MenuContext.Provider>;
 };
 

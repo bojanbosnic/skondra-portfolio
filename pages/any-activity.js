@@ -19,13 +19,7 @@ const TimeLine = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div
-          className="col-1-2 float-left"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="col-1-2 float-left">
           <h6 className="text-silver mb-2.5">Case Study</h6>
           <h5 className="text-2xl md:text-3xl my-2.5">
             ANI ACTIVITY -
@@ -40,13 +34,7 @@ const TimeLine = () => {
           <p>2022</p>
         </div>
 
-        <div
-          className="col-2-2 float-right mt-7 md:mt-0"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="col-2-2 float-right mt-7 md:mt-0">
           <Image src={asset1} alt="any acitivity logo" />
           <p className="mt-5">
             ANI has redefined how sport and physical activity is consumed;
@@ -59,13 +47,7 @@ const TimeLine = () => {
           </p>
         </div>
         {/* prvi */}
-        <div
-          className="w-full col-2-2 float-right clear-right"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="w-full col-2-2 float-right clear-right">
           <h5 className="font-semibold text-2xl mb-2.5 mt-6 md:mt-12 md:text-3xl">
             The Next Stage of Evolution
           </h5>
@@ -79,13 +61,7 @@ const TimeLine = () => {
             that unlocks thousands of sports games and recreational activities
             to individuals around the globe.
           </p>
-          <div
-            className="my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-5">
             <p className="font-bold uppercase"> Create Experiences</p>
             <p>
               At the touch of a button, easily create free or paid activities/
@@ -93,13 +69,7 @@ const TimeLine = () => {
               community.
             </p>
           </div>
-          <div
-            className="my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-5">
             <p className="font-bold uppercase">Seamlessly Connect</p>
             <p>
               Connect with like minded ‘individuals’ for a game of soccer,
@@ -107,13 +77,7 @@ const TimeLine = () => {
               ability.
             </p>
           </div>
-          <div
-            className="my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="my-5">
             <p className="font-bold uppercase">Participate</p>
             <p>
               Participate at your own convenience in your own format; training,
@@ -121,14 +85,7 @@ const TimeLine = () => {
             </p>
           </div>
         </div>
-        {/* drugif */}
-        <div
-          className="col-1-2 float-left"
-          // data-aos="fade-up"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
-        >
+        <div className="col-1-2 float-left">
           <h5 className="font-semibold mb-2.5 mt-6 md:mt-12 text-xl">
             Targeted Audiance
           </h5>
@@ -142,13 +99,7 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="flex items-center my-5">
             <Image src={retirees} alt="Retirees" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Retirees</p>
@@ -158,13 +109,7 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="flex items-center my-5">
             <Image src={corporates} alt="Corporates" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Corporates</p>
@@ -175,13 +120,7 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="flex items-center my-5">
             <div>
               <Image src={couples} alt="Couples" className="block" />
             </div>
@@ -194,13 +133,7 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="flex items-center my-5">
             <Image
               src={newToCommuntities}
               alt="New to Communitie"
@@ -212,13 +145,7 @@ const TimeLine = () => {
             </div>
           </div>
 
-          <div
-            className="flex items-center my-5"
-            // data-aos="fade-up"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="flex items-center my-5">
             <Image src={families} alt="families" className="mr-2.5" />
             <div className="ml-2.5 flex flex-1 flex-col">
               <p className="font-semibold">Families</p>
@@ -228,12 +155,9 @@ const TimeLine = () => {
             </div>
           </div>
         </div>
-        {/* POCINJE-------------------------------------------------------------------------------------- */}
         <h5 className="w-full col-1-2 float-left mt-10 mb-5 clear-left">
           The Next Stage of Evolution
         </h5>
-        {/* className="w-full col-2-2 float-right clear-right" */}
-
         <div className="w-full mb-10  md:mb-20 ">
           <div className="w-full ">
             <div className="mb-1.5 w-full float-left col-1-2 clear-left  max-w ">

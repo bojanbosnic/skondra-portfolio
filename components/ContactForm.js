@@ -56,7 +56,6 @@ const ContactForm = () => {
           I usually work on several projects but I’ll be happy to discuss new
           opportunities. <b className="block">Let’s get in touch!</b>
         </span>
-        {/* location */}
         <div className="bg-black px-0 py-0 md:py-5 border max-w-[210px] md:max-w-full border-white  mb-4 md:mb-0 rounded-xl">
           <div className="py-4">
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
@@ -70,8 +69,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      {/* forma-card */}
-
       <div
         className={`${
           success
@@ -92,7 +89,6 @@ const ContactForm = () => {
               Feel free to contact me at any time to talk about your awesome
               idea, and lets turn that into an amazing product.
             </span>
-            {/* forma */}
             <form
               ref={form}
               onSubmit={handleSubmit(sendEmail)}
@@ -111,13 +107,7 @@ const ContactForm = () => {
                     placeholder="Marko Markovic"
                     {...register("user_name", { required: true })}
                   />
-                  {/* {errors.user_name && (
-              <div className="text-red text-xs">
-                Please fill out this field.
-              </div>
-            )} */}
                 </div>
-
                 <div className="flex contact-form-col mb-2 flex-col ">
                   <label className="text mb-1 md:mb-1.5">Email</label>
                   <input
@@ -127,14 +117,8 @@ const ContactForm = () => {
                     placeholder="markovic@example.com"
                     {...register("user_email", { required: true })}
                   />
-                  {/* {errors.user_email && (
-              <div className="text-red text-xs">
-                Please fill out this field.
-              </div>
-            )} */}
                 </div>
               </div>
-
               <div className="flex w-full flex-col mb-2 md:mb-5">
                 <label className=" mb-1 md:mb-1.5">Subject</label>
                 <input
@@ -144,13 +128,7 @@ const ContactForm = () => {
                   placeholder="Information about potencial collaboration"
                   {...register("user_subject", { required: true })}
                 />
-                {/* {errors.user_subject && (
-            <div className="text-red text-xs block">
-              Please fill out this field.
-            </div>
-          )} */}
               </div>
-
               <div className="flex flex-col">
                 <label className="text mb-1 md:mb-1.5">Message</label>
                 <textarea
@@ -159,13 +137,7 @@ const ContactForm = () => {
                   placeholder="Type some texte here..."
                   {...register("user_message", { required: true })}
                 ></textarea>
-                {/* {errors.user_message && (
-            <span className="text-red text-xs">
-              Please fill out this field.
-            </span>
-          )} */}
               </div>
-
               <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
                 <button
                   type="submit"

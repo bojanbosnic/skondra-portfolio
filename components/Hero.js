@@ -1,16 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
-// import { Link } from "react-scroll";
 import Link from "next/link";
 import personalImg from "../assets/img/personal-picture.png";
 
 const Hero = () => {
-  const projects = useRef(null);
-
-  const scrollToSection = (element) => {
-    window.scrollTo({ top: element.current.offsetTop, behavior: "smooth" });
-  };
-
   return (
     <div className="container mx-auto">
       <div className="big-text order-1 md:order-2 relative"></div>

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import email from "../assets/img/email-icon.svg";
-import Link from "next/link";
 import { MenuContext } from "../context/menuContext";
 
 const Contact = () => {

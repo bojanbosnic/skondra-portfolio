@@ -4,7 +4,7 @@ import logo from "../assets/img/Logo-Mockup.jpg";
 import poster1 from "../assets/img/posters-1.jpg";
 import poster2 from "../assets/img/posters-2.jpg";
 import Footer from "../components/Footer";
-import Contact from "../components/Contact";
+
 const GraphicsArt = () => {
   return (
     <>

@@ -7,6 +7,7 @@ import employerDashboard from "../assets/img/ui-shoots/02.00 Employer Dashboard.
 import openRace from "../assets/img/ui-shoots/04.00-Open Event-Race-Timing Location.jpg";
 import events from "../assets/img/ui-shoots/Events.jpg";
 import Footer from "../components/Footer";
+
 const UiShoots = () => {
   return (
     <>
