@@ -66,7 +66,7 @@ const Hero = () => {
               View Projects
             </a>{" "}
             <span className="font-medium mx-2.5  text-silver md:mx-7">or</span>{" "}
-            <a href="about-me">Read About Me</a>
+            <Link href="about-me">Read About Me</Link>
           </h3>
         </div>
         <div
