@@ -8,21 +8,28 @@ $screenValue: 14.4;
 .close-btn {
   position: fixed;
   right: 2rem;
-  top: size(32);
+  top: 1rem;
   padding: 0;
   margin: 0;
 }
 
+.contact-card {
+  margin-top: 0px;
+}
+
 input {
-  height: 25px;
+  height: 30px;
 }
 
 label {
   font-size: 14px;
+  line-height: 32px;
 }
-
+.contact-form-height {
+  max-height: 442px;
+}
 .text-area {
-  max-height: 50px;
+  max-height: 100px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
@@ -50,7 +57,7 @@ label {
     margin-top: size(36);
   }
   .contact-form-height {
-    height: 550px;
+    max-height: 550px;
     margin-top: 100px;
     margin-bottom: 65px;
   }
@@ -114,7 +121,7 @@ label {
     margin-top: size(36);
   }
   .contact-form-height {
-    height: size(580);
+    max-height: size(580);
     padding: size(40);
     margin-top: size(40);
     margin-bottom: size(5);
