@@ -125,7 +125,7 @@ const ContactForm = () => {
                   className="w-full placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
                   name="user_subject"
                   type="text"
-                  placeholder="Information about potencial collaboration"
+                  placeholder="Info about potential collaboration"
                   {...register("user_subject", { required: true })}
                 />
               </div>
