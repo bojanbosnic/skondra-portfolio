@@ -3,6 +3,14 @@ $screenValue: 14.4;
   $vwValue: (1 * $value / $screenValue) + vw;
   @return $vwValue;
 }
+
+.logo-position {
+  position: fixed;
+  left: 2rem;
+  top: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
 .close-btn {
   position: fixed;
   right: 2rem;

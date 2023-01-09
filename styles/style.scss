@@ -2,6 +2,22 @@
   max-width: 556px;
 }
 
+.hamburger-bg {
+  fill: white;
+}
+.screen-bg {
+  fill: black;
+}
+
+.logo-size {
+  width: 102px;
+  height: 30px;
+  @media (min-width: 768px) {
+    width: 162px;
+    height: 49px;
+  }
+}
+
 .max-w {
   max-width: 525px;
 }
