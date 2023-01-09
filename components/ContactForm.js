@@ -110,11 +110,6 @@ const ContactForm = () => {
                     placeholder="Marko Markovic"
                     {...register("user_name", { required: true })}
                   />
-                  {/* {errors.user_name && (
-            <div className="text-red text-xs">
-              Please fill out this field.
-            </div>
-          )} */}
                 </div>
 
                 <div className="flex contact-form-col mb-2 flex-col ">
@@ -126,11 +121,6 @@ const ContactForm = () => {
                     placeholder="markovic@example.com"
                     {...register("user_email", { required: true })}
                   />
-                  {/* {errors.user_email && (
-            <div className="text-red text-xs">
-              Please fill out this field.
-            </div>
-          )} */}
                 </div>
               </div>
 
@@ -143,11 +133,6 @@ const ContactForm = () => {
                   placeholder="Information about potencial collaboration"
                   {...register("user_subject", { required: true })}
                 />
-                {/* {errors.user_subject && (
-          <div className="text-red text-xs block">
-            Please fill out this field.
-          </div>
-        )} */}
               </div>
 
               <div className="flex flex-col">
@@ -158,11 +143,6 @@ const ContactForm = () => {
                   placeholder="Type some texte here..."
                   {...register("user_message", { required: true })}
                 ></textarea>
-                {/* {errors.user_message && (
-          <span className="text-red text-xs">
-            Please fill out this field.
-          </span>
-        )} */}
               </div>
 
               <div className="flex form-btn-parent mt-3 pb-0 justify-center md:justify-end md:mt-8 md:pb-8">
