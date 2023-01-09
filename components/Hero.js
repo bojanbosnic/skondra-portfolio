@@ -55,7 +55,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <a className="cursor-pointer" href="#projects">
+            <a className="cursor-pointer " href="#projects">
               View Projects
             </a>{" "}
             <span className="font-medium mx-2.5  text-silver md:mx-7">or</span>{" "}

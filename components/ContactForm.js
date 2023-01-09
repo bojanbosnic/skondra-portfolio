@@ -61,11 +61,11 @@ const ContactForm = () => {
             <span className="px-5 block text-xl leading-3 font-bold head-quarter md:text-4xl md:leading-normal ">
               Head Quarter
             </span>
-            <span className="block text-grey text-fadeWhite px-5 mt-2.5 text-sm md:text-2xl">
+            <address className="block text-grey text-fadeWhite px-5 mt-2.5 text-sm md:text-2xl">
               <span className="block">Banja Luka, BiH</span>
               <span className="block">Kosovke Devojke 10</span>
               <span className="block">78000</span>
-            </span>
+            </address>
           </div>
         </div>
       </div>
@@ -99,8 +99,11 @@ const ContactForm = () => {
             >
               <div className="flex flex-wrap pt-2 md:pt-0 md:justify-between items-center w-full mb-1 md:mb-5 md:flex-nowrap">
                 <div className="flex flex-col mb-2 contact-form-col">
-                  <label className="text mb-1 md:mb-1.5">Full Name</label>
+                  <label htmlFor="fullName" className="text mb-1 md:mb-1.5">
+                    Full Name
+                  </label>
                   <input
+                    id="fullName"
                     onChange={(e) =>
                       setFields({ ...fields, user_name: e.target.value })
                     }
@@ -113,8 +116,11 @@ const ContactForm = () => {
                 </div>
 
                 <div className="flex contact-form-col mb-2 flex-col ">
-                  <label className="text mb-1 md:mb-1.5">Email</label>
+                  <label htmlFor="email" className="text mb-1 md:mb-1.5">
+                    Email
+                  </label>
                   <input
+                    id="email"
                     type="email"
                     name="user_email"
                     className="placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
@@ -125,19 +131,25 @@ const ContactForm = () => {
               </div>
 
               <div className="flex w-full flex-col mb-2 md:mb-5">
-                <label className=" mb-1 md:mb-1.5">Subject</label>
+                <label htmlFor="subject" className=" mb-1 md:mb-1.5">
+                  Subject
+                </label>
                 <input
+                  id="subject"
                   className="w-full placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
                   name="user_subject"
                   type="text"
-                  placeholder="Information about potencial collaboration"
+                  placeholder="Info about potencial collaboration"
                   {...register("user_subject", { required: true })}
                 />
               </div>
 
               <div className="flex flex-col">
-                <label className="text mb-1 md:mb-1.5">Message</label>
+                <label htmlFor="msg" className="text mb-1 md:mb-1.5">
+                  Message
+                </label>
                 <textarea
+                  id="msg"
                   name="user_message"
                   className="text-area placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base text-area"
                   placeholder="Type some texte here..."

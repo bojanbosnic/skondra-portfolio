@@ -83,6 +83,9 @@
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: none;
   z-index: 21;
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }

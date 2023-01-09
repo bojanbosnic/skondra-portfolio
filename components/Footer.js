@@ -20,59 +20,55 @@ const Footer = () => {
   return (
     <>
       <Contact />
-      <div className="bg-black text-white pt-10 md:pt-20">
+      <div className="bg-black text-white py-10 md:py-0">
         <div className="container mx-auto">
           <div className="w-full flex items-center flex-wrap justify-between">
-            <div className="w-full flex items-center justify-center flex-col md:block   md:w-1/2">
+            <div className="w-full flex items-center justify-center flex-col md:block  md:w-1/2">
               <div>
                 <Image src={logo} alt="" />
               </div>
-              <div className="mt-5 text-center max-w-sm   tracking-wider text-base font-normal  md:text-left">
-                <span className="leading-4 md:leading-8">
+              <div className="mt-5 text-center max-w-sm leading-6 md:leading-8  tracking-wider text-base font-normal  md:text-left">
+                <span className="">
                   I usually work on several projects but I’ll be happy to
                   discuss new opportunities.
                 </span>
                 <b className=" block">Let’s get in touch!</b>
               </div>
-              <nav className="mt-16 hidden underline md:block">
+              <nav className="mt-16 hidden md:block">
                 <ul className="flex uppercase text-sm  items-center justify-start flex-wrap">
                   <li className="mr-10">
-                    <Link
-                      className="cursor-pointer"
-                      to="home"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={500}
-                    >
+                    <a href="#home" className="underline hover:no-underline">
                       Home
-                    </Link>
+                    </a>
                   </li>
                   <li className="mr-10">
-                    <a href="about-me">About Me</a>
+                    <a href="about-me" className="underline hover:no-underline">
+                      About Me
+                    </a>
                   </li>
                   <li className="mr-10">
-                    <Link
-                      className="cursor-pointer"
-                      to="projects"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={500}
+                    <a
+                      href="#projects"
+                      className="underline hover:no-underline"
                     >
                       Portfolio
-                    </Link>
+                    </a>
                   </li>
                   <li className="mr-10">
-                    <a className="cursor-pointer" href="#testemonials">
+                    <a
+                      href="#testemonials"
+                      className="underline hover:no-underline"
+                    >
                       Testemonials
                     </a>
                   </li>
-                  <li
-                    onClick={() => setMenu(true)}
-                    className="mr-10 cursor-pointer"
-                  >
-                    Contact
+                  <li>
+                    <button
+                      className="mr-10 uppercase underline hover:no-underline"
+                      onClick={() => setMenu(true)}
+                    >
+                      Contact
+                    </button>
                   </li>
                 </ul>
               </nav>
@@ -106,7 +102,7 @@ const Footer = () => {
                       href="https://dribbble.com/skondra"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center underline"
+                      className="flex items-center underline hover:no-underline"
                     >
                       <span className="mr-0 md:mr-12">
                         <AiOutlineDribbble fontSize={22} />
@@ -121,7 +117,7 @@ const Footer = () => {
                       href="https://www.linkedin.com/in/dejanskondric/"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center underline"
+                      className="flex items-center underline hover:no-underline"
                     >
                       <span className="mr-0 md:mr-12">
                         <FaLinkedinIn fontSize={22} />
@@ -136,7 +132,7 @@ const Footer = () => {
                       href="https://www.behance.net/skondra"
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center underline"
+                      className="flex items-center underline hover:no-underline"
                     >
                       <span className="mr-0 md:mr-12">
                         <AiOutlineBehance fontSize={22} />
@@ -150,7 +146,7 @@ const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="flex justify-center pb-4 mt-6 md:pb-16">
+          <div className="flex justify-center pb-0 mt-6 md:pb-16">
             <span className="font-normal text-xs tracking-wider leading-3 md:text-base text-fade">
               Developed by ©
               <a
