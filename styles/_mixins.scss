@@ -1,37 +1,27 @@
 $screenValue: 14.4;
-
 @function size($value) {
   $vwValue: (1 * $value / $screenValue) + vw;
   @return $vwValue;
 }
-
 .close-btn {
   position: fixed;
   right: 2rem;
-  top: 1rem;
+  top: 0.5rem;
   padding: 0;
   margin: 0;
 }
-
-.contact-card {
-  margin-top: 0px;
-}
-
 input {
-  height: 30px;
+  height: 25px;
 }
-
+.contact-card {
+  margin-top: size(77);
+}
 label {
   font-size: 14px;
-  line-height: 32px;
-}
-.contact-form-height {
-  max-height: 442px;
 }
 .text-area {
-  max-height: 100px;
+  max-height: 50px;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .close-btn {
     position: fixed;
@@ -50,18 +40,19 @@ label {
 
   .head-quarter {
     font-size: size(38);
+    // line-height: size(50);
   }
   .location {
     font-size: size(24);
     line-height: size(36);
     margin-top: size(36);
   }
+  ////////////////////////
   .contact-form-height {
-    max-height: 550px;
+    height: 550px;
     margin-top: 100px;
     margin-bottom: 65px;
   }
-
   .lets-talk {
     padding-top: 20px;
     font-size: 30px;
@@ -71,7 +62,6 @@ label {
     font-size: 16px;
     line-height: 30px;
   }
-
   label {
     font-size: 16px;
     line-height: 24px;
@@ -79,13 +69,13 @@ label {
   input {
     height: 32px;
   }
-
   .text-area {
     max-height: 100px;
   }
 
   .form-btn-parent {
     margin-top: 20px;
+    // padding-bottom: 32px;
   }
 
   .form-btn {
@@ -94,7 +84,6 @@ label {
     padding-bottom: 12px;
   }
 }
-
 @media only screen and (min-width: 1441px) {
   .close-btn {
     position: fixed;
@@ -106,11 +95,9 @@ label {
   .contact-card {
     margin-top: size(69);
   }
-
   .card-heading {
     font-size: size(50);
   }
-
   .head-quarter {
     font-size: size(38);
     line-height: size(57);
@@ -120,29 +107,26 @@ label {
     line-height: size(36);
     margin-top: size(36);
   }
+  //////////////////////
   .contact-form-height {
-    max-height: size(580);
+    height: size(580);
     padding: size(40);
     margin-top: size(40);
     margin-bottom: size(5);
   }
-
   label {
     font-size: 18px;
   }
   input {
     height: size(30);
   }
-
   .text-area {
     max-height: size(130);
   }
-
   .form-btn-parent {
     margin-top: 20px;
     padding-bottom: 32px;
   }
-
   .lets-talk {
     padding-top: 0;
     font-size: size(18);
@@ -152,7 +136,6 @@ label {
     font-size: size(18);
     line-height: size(30);
   }
-
   label {
     font-size: size(18);
     line-height: size(30);
