@@ -43,7 +43,6 @@ const ContactForm = () => {
       );
     setSuccess(true);
     reset();
-    console.log("PROSLO JE ZADNJEG DOSLO!");
   };
 
   return (
