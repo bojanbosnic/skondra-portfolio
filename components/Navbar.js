@@ -21,7 +21,7 @@ const Interface = () => {
   };
   return (
     <div id="home" className="container mx-auto ">
-      <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
+      <nav className="flex bg-transparent justify-between items-center pt-2 mb-8">
         <a
           href="/"
           className={classNames(`${(toggle || menu) && "logo-position"} z-30`)}
