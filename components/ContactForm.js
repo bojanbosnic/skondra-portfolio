@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-wrap md:justify-between md:flex-nowrap pt-[67px]">
+    <div className="flex flex-wrap md:justify-between md:flex-nowrap">
       <div className="text-xl w-full contact-card mr-0  md:w-[40%] md:mr-16">
         <span className="block text-xl font-bold card-heading mb-1.5  leading-6 pt-6 md:pt-0 md:mb-5 text-left md:text-5xl  md:leading-[78px]">
           Contact
