@@ -22,7 +22,10 @@ const Interface = () => {
   return (
     <div id="home" className="container mx-auto ">
       <nav className="flex bg-transparent justify-between items-center pt-12 mb-8">
-        <a href="/" className="z-30 logo-position">
+        <a
+          href="/"
+          className={classNames(`${(toggle || menu) && "logo-position"} z-30`)}
+        >
           <svg
             className="logo-size"
             viewBox="0 0 162 49"
