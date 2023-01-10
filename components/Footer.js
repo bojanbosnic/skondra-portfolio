@@ -146,9 +146,13 @@ const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="flex justify-center pb-0 mt-6 md:pb-16">
+          <div className="text-center pb-0 mt-6 md:pb-16">
+            <span className="font-normal block text-xs tracking-wider leading-3 md:text-base text-fade">
+              © All Right Reserved
+            </span>
+
             <span className="font-normal text-xs tracking-wider leading-3 md:text-base text-fade">
-              Developed by ©
+              Developed by
               <a
                 href="https://github.com/bojanbosnic"
                 target="_blank"
