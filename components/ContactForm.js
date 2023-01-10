@@ -75,8 +75,8 @@ const ContactForm = () => {
         className={`${
           success
             ? "relative flex items-center justify-center  md:px-7 md:py-2.5"
-            : "px-7 py-2.5"
-        } w-full h-[340px] md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black`}
+            : "px-7 py-3.5"
+        } w-full md:w-[60%] p-10 contact-form-height bg-white rounded-md text-black`}
       >
         {success ? (
           <>

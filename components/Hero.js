@@ -97,16 +97,18 @@ const Hero = () => {
           }}
           style={{
             position: "fixed",
-            padding: "1rem 2rem",
+            // padding: "1rem 2rem",
             fontSize: "20px",
             bottom: "40px",
             right: "40px",
-            backgroundColor: "#0C9",
+            // backgroundColor: "orange",
             color: "#fff",
             textAlign: "center",
           }}
         >
-          <BsFillArrowUpCircleFill />
+          <BsFillArrowUpCircleFill
+            style={{ color: "orange", fontSize: "2rem" }}
+          />
         </button>
       )}
     </div>
