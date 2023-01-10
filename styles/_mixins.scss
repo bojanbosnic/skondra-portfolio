@@ -7,14 +7,14 @@ $screenValue: 14.4;
 .logo-position {
   position: fixed;
   left: 2rem;
-  top: 1rem;
+  top: 2rem;
   padding: 0;
   margin: 0;
 }
 .close-btn {
   position: fixed;
   right: 2rem;
-  top: 1rem;
+  top: 2rem;
   padding: 0;
   margin: 0;
 }
@@ -26,7 +26,7 @@ label {
   font-size: 14px;
 }
 .text-area {
-  max-height: 65px;
+  max-height: 70px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .close-btn {

@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <Layout pageTitle="Personal Portfolio">
       <Hero />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Projects />
       <PersonalProjects />
       <Testimonial />
