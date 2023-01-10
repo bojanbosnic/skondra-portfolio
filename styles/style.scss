@@ -116,6 +116,20 @@
   }
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5rem;
+  background: orange;
+  color: black;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  z-index: 30;
+  box-shadow: 0 5px 10px #ccc;
+}
+
 .big-text::after {
   content: "";
   background-image: url("../assets/img/designer.png");

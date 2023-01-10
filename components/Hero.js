@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import personalImg from "../assets/img/personal-picture.png";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 const Hero = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
   return (
     <div className="container mx-auto">
       <div className="big-text order-1 md:order-2 relative"></div>
@@ -72,6 +90,25 @@ const Hero = () => {
           <Image src={personalImg} alt="Dejan Skondric" />
         </div>
       </div>
+      {showButton && (
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+          style={{
+            position: "fixed",
+            padding: "1rem 2rem",
+            fontSize: "20px",
+            bottom: "40px",
+            right: "40px",
+            backgroundColor: "#0C9",
+            color: "#fff",
+            textAlign: "center",
+          }}
+        >
+          <BsFillArrowUpCircleFill />
+        </button>
+      )}
     </div>
   );
 };
