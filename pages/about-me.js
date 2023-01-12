@@ -92,7 +92,7 @@ const About = () => {
               href="https://www.linkedin.com/in/dejanskondric/"
               target="_blank"
               rel="noreferrer"
-              className="underline"
+              className="underline hover:no-underline"
             >
               LinkedIn profile.
             </a>
@@ -124,7 +124,7 @@ const About = () => {
           </div>
           <div>
             <span className="block text-[9px] leading-3 md:text-2xl font-semibold md:leading-9">
-              Owner
+              Founder/Designer
             </span>
             <span className="block text-[9px] leading-3 md:text-2xl font-semibold md:leading-9">
               Product Designer
@@ -141,7 +141,7 @@ const About = () => {
           </div>
           <div>
             <span className="block text-[9px] leading-3 md:text-2xl text-silver font-normal md:leading-9">
-              October 2022 -
+              August 2022 -
             </span>
             <span className="block text-[9px] leading-3 md:text-2xl text-silver font-normal md:leading-9">
               July 2021 - July 2022
