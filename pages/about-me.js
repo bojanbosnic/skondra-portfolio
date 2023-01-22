@@ -170,7 +170,7 @@ const About = () => {
           <div className="flex items-baseline mt-4">
             <div className="mr-4 md:mr-11">
               <h5 className="text-silver mt-0 text-sm whitespace-nowrap font-normal md:leading-loose md:text-3xl">
-                2018 - 2022
+                2018 - 22
               </h5>
             </div>
             <div>
