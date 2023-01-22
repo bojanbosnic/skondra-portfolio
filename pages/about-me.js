@@ -158,26 +158,26 @@ const About = () => {
           </div>
         </div>
         <div
-          className="my-9"
+          className=""
           data-aos="fade-up"
           data-aos-delay="60"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h6 className="font-medium text-center text-xs leading-3 md:leading-7 md:text-base  tracking-[9px]">
+          <h6 className="font-medium text-center text-xs leading-3 md:leading-7 md:text-base  tracking-[9px] mt-9">
             Education
           </h6>
-          <div className="flex items-baseline">
+          <div className="flex items-baseline mt-4">
             <div className="mr-4 md:mr-11">
-              <h5 className="text-silver font-normal md:leading-loose">
+              <h5 className="text-silver mt-0 text-sm whitespace-nowrap font-normal md:leading-loose md:text-3xl">
                 2018 - 2022
               </h5>
             </div>
             <div>
-              <h5 className="font-semibold my-1.5 md:my-2.5">
+              <span className="font-semibold text-sm  my-5 leading-6 tracking-wide md:leading-relaxed  md:text-3xl ">
                 Bachelor of programming and software engineering
-              </h5>
-              <span className="block text-[9px] leading-3 md:text-2xl text-silver font-normal md:leading-9">
+              </span>
+              <span className="block text-[9px] leading-3 text-xs md:text-2xl text-silver font-normal md:leading-9">
                 Pan-European University “Apeiron” - Banja Luka
               </span>
             </div>
