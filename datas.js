@@ -1,7 +1,7 @@
 import gradimir from "./assets/img/slider/gradimirstankovic.png";
 import mirko from "./assets/img/slider/Mirko Markovic.png";
 import strahinja from "./assets/img/slider/strahinjababic.png";
-import ivana from "./assets/img/slider/ivana.jpg";
+import ivana1 from "./assets/img/slider/ivana1.jpg";
 export const testimonialReviews = [
   {
     id: 1,
@@ -33,6 +33,6 @@ export const testimonialReviews = [
       " Working with Dejan was truly a delightful experience. From our kick-off meeting to our final delivery, Dejan had the creative depth to go from an idea to a fully finished product. On top of that, he is a world class communicator which makes the process fun and non-intimidating.",
     name: "Ivana Milutinovic",
     position: "Senior Product Designer",
-    picture: `${ivana.src}`,
+    picture: `${ivana1.src}`,
   },
 ];
