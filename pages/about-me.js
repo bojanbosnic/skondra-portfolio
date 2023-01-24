@@ -205,25 +205,25 @@ const About = () => {
         <div className="hidden md:flex items-center flex-wrap justify-center mb-14">
           <div className="flex">
             <div className="mr-6">
-              <Image src={digivox} alt="" className="clients-imgs" />
+              <Image src={digivox} alt="digivox" className="clients-imgs" />
             </div>
             <div className="mr-6">
-              <Image src={njuko} alt="" className="clients-imgs" />
+              <Image src={njuko} alt="njuko" className="clients-imgs" />
             </div>
             <div className="mr-6">
-              <Image src={eye} alt="" className="clients-imgs" />
+              <Image src={eye} alt="eye" className="clients-imgs" />
             </div>
           </div>
 
           <div className="flex ml-1 mt-0 md:mt-8 lg:mt-8 xl:mt-0">
             <div className="mr-6">
-              <Image src={itt} alt="" className="clients-imgs" />
+              <Image src={itt} alt="itt" className="clients-imgs" />
             </div>
             <div className="mr-6">
-              <Image src={onetime} alt="" className="clients-imgs" />
+              <Image src={onetime} alt="onetime" className="clients-imgs" />
             </div>
             <div className="mr-6">
-              <Image src={run4reef} alt="" className="clients-imgs" />
+              <Image src={run4reef} alt="run4reef" className="clients-imgs" />
             </div>
           </div>
         </div>

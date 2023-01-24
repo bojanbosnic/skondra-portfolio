@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="w-full flex items-center flex-wrap justify-between">
             <div className="w-full flex items-center justify-center flex-col md:block  md:w-1/2">
               <div>
-                <Image src={logo} alt="" />
+                <Image src={logo} alt="Logo" />
               </div>
               <div className="mt-5 text-center max-w-sm leading-6 md:leading-8  tracking-wider text-base font-normal  md:text-left">
                 <span className="">

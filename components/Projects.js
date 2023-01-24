@@ -35,7 +35,7 @@ const Projects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={pic1} alt="" className="image" />
+        <Image src={pic1} alt="time line picture laptop" className="image" />
         <div class="overlay">
           <Link
             href="time-line"
@@ -61,7 +61,7 @@ const Projects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={pic2} alt="" className="image" />
+        <Image src={pic2} alt="mobile design" className="image" />
         <div class="overlay">
           <Link
             href="any-activity"
@@ -86,7 +86,7 @@ const Projects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <Image src={pic3} alt="" className="image" />
+        <Image src={pic3} alt="ekokorpa laptop picture" className="image" />
         <div class="overlay">
           <Link
             href="opg-marketing"
